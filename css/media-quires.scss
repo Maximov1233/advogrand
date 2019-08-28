@@ -1,0 +1,134 @@
+@media (max-width: 1552px) {
+    body {
+        header {
+            padding: 0 3%;
+        }
+    }
+}
+
+@media (max-width: 1506px) {
+    body {
+        header {
+            .header-nav {
+                nav {
+                    ul {
+                        li {
+                            margin-right: 2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1377px) {
+    body {
+        header {
+            .header-logo {
+                img {
+                    max-width: 90%;
+                }
+            }
+
+            .header-nav {
+                nav {
+                    ul {
+                        li {
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1277px) {
+    body {
+        header {
+            .header-logo {
+                img {
+                    max-width: 90%;
+                }
+            }
+
+            .header-nav {
+                nav {
+                    ul {
+                        li {
+                            margin-right: 1rem;
+                            font-size: 1.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1209px) {
+    body {
+        header {
+            .header-logo {
+                img {
+                    max-width: 90%;
+                }
+            }
+
+            .header-phone {
+                h3 {
+                    font-size: 1.3rem;
+                }
+            }
+
+            .header-download {
+                width: 6rem;
+
+                .android-download {
+                    padding: 2px;
+
+                    svg {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+
+                .ios-download {
+                    padding: 3px;
+
+                    svg {
+                        width: 2rem;
+                        height: 2rem;
+                    }
+                }
+            }
+
+            .header-button {
+                button {
+                    width: 11rem;
+                    height: 3rem;
+                    font-size: 1.1rem;
+
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1111px) {
+    body {
+        header {
+            padding: 0 25%;
+            justify-content: space-around;
+
+            .header-nav {
+                display: none;
+            }
+
+            .header-download {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,125 @@
+// @font-face {
+//     font-family: 'Proxima Nova';
+//     src: url(../fonts/ProximaNova-Regular.ttf) format("ttf");
+// }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 12px;
+}
+
+body {
+    font-family: 'Proxima Nova', sans-serif;
+
+    header {
+        height: 5rem;
+        border: 1px solid red;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 0 5%;
+
+        .header-logo {
+            a {
+                text-decoration: none;
+                color: #1c1c1c;
+            }
+        }
+
+        .header-phone {
+            h3 {
+                font-size: 1.4rem;
+            }
+        }
+
+        .header-nav {
+            nav {
+                ul {
+                    display: flex;
+                    justify-content: space-between;
+                    list-style: none;
+
+                    li {
+                        margin-right: 3.4rem;
+                        font-size: 1.4rem;
+
+                        a {
+                            text-decoration: none;
+                            color: #1c1c1c;
+                        }
+                    }
+                }
+            }
+        }
+
+        .header-phone {
+            h3 {
+                color: #1c1c1c;
+                font-size: 1.5rem;
+            }
+        }
+
+        .header-download {
+            display: flex;
+            justify-content: space-around;
+            width: 9rem;
+
+            .android-download {
+                border: 1px solid #e42626;
+                border-radius: 5px;
+                padding: 3px;
+
+                svg {
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+
+            .ios-download {
+                border: 1px solid #e42626;
+                border-radius: 5px;
+                padding: 3px;
+
+                svg {
+                    width: 3rem;
+                    height: 3rem;
+                }
+            }
+        }
+
+        .header-button {
+            button {
+                width: 14rem;
+                height: 3rem;
+                background-color: #c91111;
+                color: #fff;
+                border: none;
+                border-radius: 5px;
+                font-weight: 700;
+                font-size: 1.2rem;
+                cursor: pointer;
+            }
+        }
+    }
+
+    .jurist {
+        padding: 0 7%;
+        background-image: url(../img/jurist_BG.png);
+        background-repeat: no-repeat;
+        height: 61rem;
+        &_text {
+            color: #fff;
+            h4 {
+                margin: 0;
+                padding: 0;
+                font-size: 3.2rem;
+                font-weight: 700;
+            }
+        }
+    }
+}

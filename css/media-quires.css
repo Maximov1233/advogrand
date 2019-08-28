@@ -1,0 +1,76 @@
+@media (max-width: 1552px) {
+  body header {
+    padding: 0 3%;
+  }
+}
+
+@media (max-width: 1506px) {
+  body header .header-nav nav ul li {
+    margin-right: 2rem;
+  }
+}
+
+@media (max-width: 1377px) {
+  body header .header-logo img {
+    max-width: 90%;
+  }
+  body header .header-nav nav ul li {
+    margin-right: 1rem;
+  }
+}
+
+@media (max-width: 1277px) {
+  body header .header-logo img {
+    max-width: 90%;
+  }
+  body header .header-nav nav ul li {
+    margin-right: 1rem;
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 1209px) {
+  body header .header-logo img {
+    max-width: 90%;
+  }
+  body header .header-phone h3 {
+    font-size: 1.3rem;
+  }
+  body header .header-download {
+    width: 6rem;
+  }
+  body header .header-download .android-download {
+    padding: 2px;
+  }
+  body header .header-download .android-download svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  body header .header-download .ios-download {
+    padding: 3px;
+  }
+  body header .header-download .ios-download svg {
+    width: 2rem;
+    height: 2rem;
+  }
+  body header .header-button button {
+    width: 11rem;
+    height: 3rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 1111px) {
+  body header {
+    padding: 0 25%;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body header .header-nav {
+    display: none;
+  }
+  body header .header-download {
+    display: none;
+  }
+}
+/*# sourceMappingURL=media-quires.css.map */

@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  font-size: 12px;
+}
+
+body {
+  font-family: 'Proxima Nova', sans-serif;
+}
+
+body header {
+  height: 5rem;
+  border: 1px solid red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 5%;
+}
+
+body header .header-logo a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+body header .header-phone h3 {
+  font-size: 1.4rem;
+}
+
+body header .header-nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+body header .header-nav nav ul li {
+  margin-right: 3.4rem;
+  font-size: 1.4rem;
+}
+
+body header .header-nav nav ul li a {
+  text-decoration: none;
+  color: #1c1c1c;
+}
+
+body header .header-phone h3 {
+  color: #1c1c1c;
+  font-size: 1.5rem;
+}
+
+body header .header-download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 9rem;
+}
+
+body header .header-download .android-download {
+  border: 1px solid #e42626;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+body header .header-download .android-download svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+body header .header-download .ios-download {
+  border: 1px solid #e42626;
+  border-radius: 5px;
+  padding: 3px;
+}
+
+body header .header-download .ios-download svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+body header .header-button button {
+  width: 14rem;
+  height: 3rem;
+  background-color: #c91111;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+body .jurist {
+  padding: 0 7%;
+  background-image: url(../img/jurist_BG.png);
+  background-repeat: no-repeat;
+  height: 61rem;
+}
+
+body .jurist_text {
+  color: #fff;
+}
+
+body .jurist_text h4 {
+  margin: 0;
+  padding: 0;
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+/*# sourceMappingURL=main.css.map */
