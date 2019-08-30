@@ -1,3 +1,27 @@
+@font-face {
+  font-family: 'Proxima Nova Rg';
+  src: url("../fonts/ProximaNova-Regular.eot");
+  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Bd';
+  src: url("../fonts/ProximaNova-Bold.eot");
+  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Proxima Nova Lt';
+  src: url("../fonts/ProximaNova-Light.eot");
+  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype"), url("../fonts/ProximaNova-Light.svg#ProximaNova-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -10,89 +34,35 @@ html {
 }
 
 body {
-  font-family: 'Proxima Nova', sans-serif;
+  font-family: 'Proxima Nova Rg';
+  height: 1000rem;
 }
 
-body header {
-  height: 5rem;
-  border: 1px solid red;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 0 5%;
-}
-
-body header .header-logo a {
+body a {
   text-decoration: none;
+}
+
+body .header-phone h3 {
+  font-size: 1.4rem;
   color: #1c1c1c;
 }
 
-body header .header-phone h3 {
-  font-size: 1.4rem;
+body .section-title {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
 }
 
-body header .header-nav nav ul {
+body .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  list-style: none;
+  text-align: center;
 }
 
-body header .header-nav nav ul li {
-  margin-right: 3.4rem;
-  font-size: 1.4rem;
-}
-
-body header .header-nav nav ul li a {
-  text-decoration: none;
-  color: #1c1c1c;
-}
-
-body header .header-phone h3 {
-  color: #1c1c1c;
-  font-size: 1.5rem;
-}
-
-body header .header-download {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 9rem;
-}
-
-body header .header-download .android-download {
-  border: 1px solid #e42626;
-  border-radius: 5px;
-  padding: 3px;
-}
-
-body header .header-download .android-download svg {
-  width: 3rem;
-  height: 3rem;
-}
-
-body header .header-download .ios-download {
-  border: 1px solid #e42626;
-  border-radius: 5px;
-  padding: 3px;
-}
-
-body header .header-download .ios-download svg {
-  width: 3rem;
-  height: 3rem;
-}
-
-body header .header-button button {
+body .button {
   width: 14rem;
   height: 3rem;
   background-color: #c91111;
@@ -104,21 +74,205 @@ body header .header-button button {
   cursor: pointer;
 }
 
+body .header {
+  padding-top: 1rem;
+  min-height: 5rem;
+}
+
+body .header-nav nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+}
+
+body .header-nav nav ul li {
+  margin-right: 3.4rem;
+  font-size: 1.4rem;
+}
+
+body .header-nav nav ul li a {
+  color: #1c1c1c;
+}
+
+body .download {
+  font-family: 'Proxima Nova Rg';
+  color: #1c1c1c;
+  padding: 1rem 0;
+}
+
+body .download .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .download .container .header-phone a {
+  font-size: 1.8rem;
+}
+
+body .download .container .download-slogan {
+  text-align: center;
+}
+
+body .download .container .download-slogan p {
+  font-size: 1.4rem;
+}
+
+body .download .container .app-download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 9rem;
+}
+
+body .download .container .app-download__link {
+  border: 1px solid #e42626;
+  border-radius: 5px;
+  padding: 7px;
+}
+
+body .download .container .app-download__link svg {
+  width: 30px;
+  height: 30px;
+}
+
 body .jurist {
-  padding: 0 7%;
   background-image: url(../img/jurist_BG.png);
   background-repeat: no-repeat;
-  height: 61rem;
+  min-height: 51rem;
+}
+
+body .jurist .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column;
+          flex-flow: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 body .jurist_text {
   color: #fff;
+  padding-top: 10rem;
+  max-width: 45.1rem;
+  margin-left: 10%;
+  margin-bottom: 4rem;
+  text-align: left;
 }
 
-body .jurist_text h4 {
-  margin: 0;
-  padding: 0;
+body .jurist_text h2 {
+  font-family: 'Proxima Nova Bd';
   font-size: 3.2rem;
   font-weight: 700;
+}
+
+body .jurist_text h2 span {
+  font-size: 4rem;
+  text-transform: uppercase;
+}
+
+body .jurist_text p {
+  font-size: 2.4rem;
+}
+
+body .jurist-button {
+  margin-left: 10%;
+}
+
+body .jurist-button button {
+  width: 30rem;
+  height: 6rem;
+  font-size: 1.8rem;
+  font-family: 'Proxima Nova Rg';
+}
+
+body .features .container {
+  padding: 10rem 0;
+  display: block;
+  color: #1c1c1c;
+}
+
+body .features .container .section-title {
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+}
+
+body .features .container .feature {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 1rem;
+  min-height: 6rem;
+  margin-left: 10%;
+}
+
+body .features .container .feature p {
+  font-size: 1.6rem;
+  margin-left: 2rem;
+  width: 22rem;
+}
+
+body .about {
+  background: #1c1c1c url(../img/bg.png) no-repeat top;
+  min-height: 600px;
+  color: #fff;
+}
+
+body .about .container {
+  display: block;
+}
+
+body .about .container .section-title {
+  padding: 10rem 0 3rem;
+}
+
+body .about .container .section-description {
+  max-width: 80%;
+  margin: auto;
+  margin-bottom: 6rem;
+}
+
+body .about .container .section-description p {
+  font-size: 1.6rem;
+}
+
+body .about .container .section-achievements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .about .container .section-achievements .achievement {
+  margin-right: 8rem;
+}
+
+body .about .container .section-achievements .achievement span {
+  font-size: 1.6rem;
+}
+
+body .about .container .section-achievements .achievement span strong {
+  font-size: 4.8rem;
 }
 /*# sourceMappingURL=main.css.map */

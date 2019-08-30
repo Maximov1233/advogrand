@@ -579,7 +579,8 @@ pre code {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
-    margin-left: auto
+    margin-left: auto;
+    
 }
 /*
 @media (min-width:576px) {
@@ -602,7 +603,7 @@ pre code {
 */
  @media (min-width:1200px) {
     .container {
-        max-width: 1140px
+        max-width: 1670px;
     }
 } 
 
@@ -613,7 +614,7 @@ pre code {
     margin-right: auto;
     margin-left: auto
 }
-/*
+
 .row {
     display: -ms-flexbox;
     display: flex;
@@ -623,6 +624,7 @@ pre code {
     margin-left: -15px
 }
 
+/*
 .no-gutters {
     margin-right: 0;
     margin-left: 0
@@ -633,7 +635,7 @@ pre code {
     padding-right: 0;
     padding-left: 0
 }
-
+*/
 .col,
 .col-1,
 .col-10,
@@ -796,7 +798,7 @@ pre code {
     flex: 0 0 100%;
     max-width: 100%
 }
-
+/*
 .order-first {
     -ms-flex-order: -1;
     order: -1
@@ -915,7 +917,7 @@ pre code {
 .offset-11 {
     margin-left: 91.666667%
 }
-
+*/
 @media (min-width:576px) {
     .col-sm {
         -ms-flex-preferred-size: 0;
@@ -1763,7 +1765,7 @@ pre code {
         margin-left: 91.666667%
     }
 }
-
+/*
 .table {
     width: 100%;
     margin-bottom: 1rem;
@@ -7591,7 +7593,7 @@ button.bg-dark:hover {
     -ms-flex-negative: 1 !important;
     flex-shrink: 1 !important
 }
-
+*/
 .justify-content-start {
     -ms-flex-pack: start !important;
     justify-content: flex-start !important
@@ -7701,7 +7703,7 @@ button.bg-dark:hover {
     -ms-flex-item-align: stretch !important;
     align-self: stretch !important
 }
-
+/*
 @media (min-width:576px) {
     .flex-sm-row {
         -ms-flex-direction: row !important;
@@ -9051,12 +9053,12 @@ button.bg-dark:hover {
 .my-auto {
     margin-bottom: auto !important
 }
-
+*/
 .ml-auto,
 .mx-auto {
     margin-left: auto !important
 }
-
+/*
 @media (min-width:576px) {
     .m-sm-0 {
         margin: 0 !important
@@ -10822,11 +10824,11 @@ button.bg-dark:hover {
 .text-right {
     text-align: right !important
 }
-
+*/
 .text-center {
     text-align: center !important
 }
-
+/*
 @media (min-width:576px) {
     .text-sm-left {
         text-align: left !important
