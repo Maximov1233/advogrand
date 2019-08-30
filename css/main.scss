@@ -251,4 +251,31 @@ body {
             }
         }
     }
+
+    .description {
+        padding: 10rem 0;
+        color: #1c1c1c;
+        .container {
+            flex-direction: column;
+            .section-title {
+                margin-bottom: 4rem;
+                font-family: 'Proxima Nova Bd';
+            }
+            .descriptions {
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                
+                .description__item {
+                    max-width: 33rem;
+                    p {
+                        font-size: 1.6rem;   
+                    }
+                    .description__image {
+                        min-height: 100px;
+                    }
+                }
+            }
+        }
+    }
 }

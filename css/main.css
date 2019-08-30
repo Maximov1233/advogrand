@@ -275,4 +275,44 @@ body .about .container .section-achievements .achievement span {
 body .about .container .section-achievements .achievement span strong {
   font-size: 4.8rem;
 }
+
+body .description {
+  padding: 10rem 0;
+  color: #1c1c1c;
+}
+
+body .description .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body .description .container .section-title {
+  margin-bottom: 4rem;
+  font-family: 'Proxima Nova Bd';
+}
+
+body .description .container .descriptions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .description .container .descriptions .description__item {
+  max-width: 33rem;
+}
+
+body .description .container .descriptions .description__item p {
+  font-size: 1.6rem;
+}
+
+body .description .container .descriptions .description__item .description__image {
+  min-height: 100px;
+}
 /*# sourceMappingURL=main.css.map */
