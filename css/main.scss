@@ -63,6 +63,7 @@ body {
     .section-title {
         font-size: 2.4rem;
         margin-bottom: 3rem;
+        font-family: 'Proxima Nova Bd';
     }
 
     .container {
@@ -112,36 +113,40 @@ body {
         font-family: 'Proxima Nova Rg';
         color: #1c1c1c;
         padding: 1rem 0;
+
         .container {
             align-items: center;
+
             .header-phone {
                 a {
                     font-size: 1.8rem;
                 }
             }
+
             .download-slogan {
                 text-align: center;
-                
+
                 p {
                     font-size: 1.4rem;
                 }
             }
+
             .app-download {
                 display: flex;
                 justify-content: space-around;
                 width: 9rem;
-    
+
                 &__link {
                     border: 1px solid #e42626;
                     border-radius: 5px;
                     padding: 7px;
-    
+
                     svg {
                         width: 30px;
                         height: 30px;
                     }
                 }
-    
+
             }
         }
     }
@@ -150,6 +155,7 @@ body {
         background-image: url(../img/jurist_BG.png);
         background-repeat: no-repeat;
         min-height: 51rem;
+
         .container {
             display: flex;
             flex-flow: column;
@@ -199,16 +205,13 @@ body {
             display: block;
             color: #1c1c1c;
 
-            .section-title {
-                font-size: 2.4rem;
-                margin-bottom: 3rem;
-            }
             .feature {
                 display: flex;
                 align-items: center;
                 margin: 1rem;
                 min-height: 6rem;
                 margin-left: 10%;
+
                 p {
                     font-size: 1.6rem;
                     margin-left: 2rem;
@@ -217,36 +220,45 @@ body {
             }
         }
     }
+
     .about {
         background: #1c1c1c url(../img/bg.png) no-repeat top;
         min-height: 600px;
         color: #fff;
+
         .container {
             display: block;
+
             .section-title {
                 padding: 10rem 0 3rem;
             }
+
             .section-description {
                 max-width: 80%;
                 margin: auto;
                 margin-bottom: 6rem;
+
                 p {
                     font-size: 1.6rem;
                 }
             }
+
             .section-achievements {
                 display: flex;
                 justify-content: center;
                 align-items: center;
+
                 .achievement {
                     margin-right: 8rem;
+
                     span {
                         font-size: 1.6rem;
+
                         strong {
                             font-size: 4.8rem;
                         }
                     }
-                    
+
                 }
             }
         }
@@ -255,27 +267,113 @@ body {
     .description {
         padding: 10rem 0;
         color: #1c1c1c;
+        background-color: #f5f5f5;
+
         .container {
             flex-direction: column;
+
             .section-title {
                 margin-bottom: 4rem;
-                font-family: 'Proxima Nova Bd';
             }
-            .descriptions {
-                display: flex;
-                justify-content: space-around;
-                align-items: center;
-                
-                .description__item {
-                    max-width: 33rem;
-                    p {
-                        font-size: 1.6rem;   
-                    }
-                    .description__image {
-                        min-height: 100px;
-                    }
+
+            .description__item {
+                padding: 1rem 7rem;
+
+                .description__text {
+                    margin-top: 0.3rem;
+                    font-size: 1.6rem;
                 }
             }
+
+        }
+    }
+
+    .advantages {
+        color: #1c1c1c;
+
+        .container {
+            flex-direction: column;
+            text-align: unset;
+
+            ul {
+                list-style: none;
+            }
+
+            .section-title {
+                text-align: center;
+                padding: 10rem 0 8rem;
+            }
+
+            .advantages-description {
+                display: flex;
+                justify-content: center;
+
+                li {
+                    font-size: 1.3rem;
+                    margin-bottom: 3rem;
+
+                }
+
+
+                .comparing {
+                    display: flex;
+
+                    .advantages__list {
+                        text-align: right;
+                        padding: 3rem 1rem 0;
+                    }
+
+                    &__advogrand {
+                        background-color: #26b83a;
+                        text-align: center;
+                        color: #fff;
+                        min-width: 21rem;
+                        padding: 3rem 1rem;
+                    }
+
+                    &__others {
+                        border: 1px solid #e8e8e8;
+                        text-align: center;
+                        padding: 3rem 1rem;
+                    }
+                }
+
+                .statistics-description {
+                    margin-left: 4rem;
+
+                    .section-title {
+                        padding: 0;
+                        font-size: 1.6rem;
+                    }
+
+                    .statistics-list {
+                        li {
+                            display: flex;
+                            align-items: center;
+                            font-size: 1.6rem;
+                            padding: 1rem 0;
+
+                            strong {
+                                font-family: 'Proxima Nova Bd';
+                                margin-left: 2rem;
+                                margin-right: 0.5rem;
+                            }
+                        }
+                    }
+                }
+
+                .statistics-button {
+                    button {
+                        font-size: 1.6rem;
+                        font-weight: 700;
+                        min-width: 27rem;
+                        min-height: 5rem;
+                        font-family: 'Proxima Nova Bd';
+                    }
+
+                }
+            }
+
         }
     }
 }

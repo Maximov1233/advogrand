@@ -50,6 +50,7 @@ body .header-phone h3 {
 body .section-title {
   font-size: 2.4rem;
   margin-bottom: 3rem;
+  font-family: 'Proxima Nova Bd';
 }
 
 body .container {
@@ -205,11 +206,6 @@ body .features .container {
   color: #1c1c1c;
 }
 
-body .features .container .section-title {
-  font-size: 2.4rem;
-  margin-bottom: 3rem;
-}
-
 body .features .container .feature {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -279,6 +275,7 @@ body .about .container .section-achievements .achievement span strong {
 body .description {
   padding: 10rem 0;
   color: #1c1c1c;
+  background-color: #f5f5f5;
 }
 
 body .description .container {
@@ -290,29 +287,108 @@ body .description .container {
 
 body .description .container .section-title {
   margin-bottom: 4rem;
-  font-family: 'Proxima Nova Bd';
 }
 
-body .description .container .descriptions {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+body .description .container .description__item {
+  padding: 1rem 7rem;
 }
 
-body .description .container .descriptions .description__item {
-  max-width: 33rem;
-}
-
-body .description .container .descriptions .description__item p {
+body .description .container .description__item .description__text {
+  margin-top: 0.3rem;
   font-size: 1.6rem;
 }
 
-body .description .container .descriptions .description__item .description__image {
-  min-height: 100px;
+body .advantages {
+  color: #1c1c1c;
+}
+
+body .advantages .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: unset;
+}
+
+body .advantages .container ul {
+  list-style: none;
+}
+
+body .advantages .container .section-title {
+  text-align: center;
+  padding: 10rem 0 8rem;
+}
+
+body .advantages .container .advantages-description {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .advantages .container .advantages-description li {
+  font-size: 1.3rem;
+  margin-bottom: 3rem;
+}
+
+body .advantages .container .advantages-description .comparing {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .advantages .container .advantages-description .comparing .advantages__list {
+  text-align: right;
+  padding: 3rem 1rem 0;
+}
+
+body .advantages .container .advantages-description .comparing__advogrand {
+  background-color: #26b83a;
+  text-align: center;
+  color: #fff;
+  min-width: 21rem;
+  padding: 3rem 1rem;
+}
+
+body .advantages .container .advantages-description .comparing__others {
+  border: 1px solid #e8e8e8;
+  text-align: center;
+  padding: 3rem 1rem;
+}
+
+body .advantages .container .advantages-description .statistics-description {
+  margin-left: 4rem;
+}
+
+body .advantages .container .advantages-description .statistics-description .section-title {
+  padding: 0;
+  font-size: 1.6rem;
+}
+
+body .advantages .container .advantages-description .statistics-description .statistics-list li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.6rem;
+  padding: 1rem 0;
+}
+
+body .advantages .container .advantages-description .statistics-description .statistics-list li strong {
+  font-family: 'Proxima Nova Bd';
+  margin-left: 2rem;
+  margin-right: 0.5rem;
+}
+
+body .advantages .container .advantages-description .statistics-button button {
+  font-size: 1.6rem;
+  font-weight: 700;
+  min-width: 27rem;
+  min-height: 5rem;
+  font-family: 'Proxima Nova Bd';
 }
 /*# sourceMappingURL=main.css.map */
