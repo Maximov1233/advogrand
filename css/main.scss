@@ -1,4 +1,55 @@
 @font-face {
+    font-family: 'Muller Light';
+    src: url('../fonts/MullerNarrow-Light.eot');
+    src: url('../fonts/MullerNarrow-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerNarrow-Light.woff2') format('woff2'),
+        url('../fonts/MullerNarrow-Light.woff') format('woff'),
+        url('../fonts/MullerNarrow-Light.ttf') format('truetype'),
+        url('../fonts/MullerNarrow-Light.svg#MullerNarrow-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller Medium';
+    src: url('../fonts/MullerNarrow-Medium.eot');
+    src: url('../fonts/MullerNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerNarrow-Medium.woff2') format('woff2'),
+        url('../fonts/MullerNarrow-Medium.woff') format('woff'),
+        url('../fonts/MullerNarrow-Medium.ttf') format('truetype'),
+        url('../fonts/MullerNarrow-Medium.svg#MullerNarrow-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller Bold';
+    src: url('../fonts/MullerBold.eot');
+    src: url('../fonts/MullerBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerBold.woff2') format('woff2'),
+        url('../fonts/MullerBold.woff') format('woff'),
+        url('../fonts/MullerBold.ttf') format('truetype'),
+        url('../fonts/MullerBold.svg#MullerBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller Regular';
+    src: url('../fonts/MullerRegular.eot');
+    src: url('../fonts/MullerRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerRegular.woff2') format('woff2'),
+        url('../fonts/MullerRegular.woff') format('woff'),
+        url('../fonts/MullerRegular.ttf') format('truetype'),
+        url('../fonts/MullerRegular.svg#MullerRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+// Proxima Nova
+@font-face {
     font-family: 'Proxima Nova Rg';
     src: url('../fonts/ProximaNova-Regular.eot');
     src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
@@ -51,6 +102,12 @@ body {
 
     a {
         text-decoration: none;
+    }
+
+    .li_focus {
+        border-radius: 5px;
+        color: #e50000;
+        border: 2px solid #e42626 !important;
     }
 
     .header-phone {
@@ -154,7 +211,7 @@ body {
     .jurist {
         background-image: url(../img/jurist_BG.png);
         background-repeat: no-repeat;
-        min-height: 51rem;
+        padding: 1rem 0 7rem;
 
         .container {
             display: flex;
@@ -290,6 +347,7 @@ body {
 
     .advantages {
         color: #1c1c1c;
+        padding: 2rem 0 4rem;
 
         .container {
             flex-direction: column;
@@ -374,6 +432,107 @@ body {
                 }
             }
 
+        }
+    }
+
+    .consulting {
+        background: url(../img/consulting_bg.jpg) no-repeat top;
+        color: #fff;
+        min-height: 47rem;
+        padding: 10rem 0 2rem;
+        font-family: 'Muller Regular';
+
+        .container {
+            justify-content: space-around;
+            text-align: unset;
+
+            .section-title {
+                text-align: left;
+                font-family: 'Muller Bold';
+
+            }
+
+            .consulting-description {
+                padding-left: 10%;
+
+                ul {
+                    list-style: none;
+
+                    li {
+                        font-size: 1.8rem;
+                        font-family: 'Muller Light';
+                        letter-spacing: 1.2px;
+                        padding: 1rem 0;
+                        a {
+                            color: inherit;
+                            text-decoration: underline;
+                        }
+                        span {
+                            margin-right: 2rem;
+                            color: #d82020;
+                            font-family: 'Muller Medium';
+                        }
+                    }
+                }
+
+            }
+            .consulting-download {
+                padding-top: 3rem;
+                a {
+                    display: block;
+                    margin-bottom: 3rem;
+                }
+            }
+        }
+    }
+
+    .reviews {
+        color: #313131;
+        font-family: 'Muller Regular';
+        .container {
+            flex-direction: column;
+            text-align: center;
+            .reviews-titles {
+                margin: auto;
+                margin-bottom: 2rem;
+                ul {
+                    list-style: none;
+                    display: flex;
+                    .reviews-title {
+                        border: 1px solid #fff;
+                        font-family: 'Muller Bold';
+                        margin-right: 2.6rem;
+                        font-size: 1.4rem;
+                        text-transform: uppercase;
+                        letter-spacing: 0.7px;
+                        padding: 1rem 2.5rem;
+                        cursor: pointer;
+                        &:hover {         
+                            color: #e50000;
+                        }
+                    }
+                }
+            }
+            .row {
+                transition: reviewIn ease-out 1s;
+            }
+            .review {
+                border: 1px solid red;
+                min-height: 12rem;
+                min-width: 12rem;
+                margin: 1rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            @keyframes reviewIn {
+                0% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
         }
     }
 }
