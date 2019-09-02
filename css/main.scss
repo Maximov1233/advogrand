@@ -141,6 +141,21 @@ body {
         cursor: pointer;
     }
 
+    .reviews-title {
+        border: 1px solid #f5f5f5;
+        ;
+        font-family: 'Muller Bold';
+        margin-right: 2.6rem;
+        font-size: 1.4rem;
+        text-transform: uppercase;
+        letter-spacing: 0.7px;
+        padding: 1rem 2.5rem;
+        cursor: pointer;
+        &:hover {
+            color: #e50000;
+        }
+    }
+
     .header {
         padding-top: 1rem;
         min-height: 5rem;
@@ -370,6 +385,7 @@ body {
                     font-size: 1.3rem;
                     margin-bottom: 3rem;
 
+
                 }
 
 
@@ -379,6 +395,13 @@ body {
                     .advantages__list {
                         text-align: right;
                         padding: 3rem 1rem 0;
+
+                        li {
+                            &:first-child {
+                                opacity: 0;
+                            }
+                        }
+
                     }
 
                     &__advogrand {
@@ -438,18 +461,18 @@ body {
     .consulting {
         background: url(../img/consulting_bg.jpg) no-repeat top;
         color: #fff;
-        min-height: 47rem;
-        padding: 10rem 0 2rem;
+
         font-family: 'Muller Regular';
+        padding: 10rem 0 2rem;
 
         .container {
+
             justify-content: space-around;
             text-align: unset;
 
             .section-title {
                 text-align: left;
                 font-family: 'Muller Bold';
-
             }
 
             .consulting-description {
@@ -463,10 +486,12 @@ body {
                         font-family: 'Muller Light';
                         letter-spacing: 1.2px;
                         padding: 1rem 0;
+
                         a {
                             color: inherit;
                             text-decoration: underline;
                         }
+
                         span {
                             margin-right: 2rem;
                             color: #d82020;
@@ -476,8 +501,10 @@ body {
                 }
 
             }
+
             .consulting-download {
                 padding-top: 3rem;
+
                 a {
                     display: block;
                     margin-bottom: 3rem;
@@ -489,48 +516,210 @@ body {
     .reviews {
         color: #313131;
         font-family: 'Muller Regular';
+        background-color: #f5f5f5;
+        padding: 4rem 0;
+
+        .change-opacity {
+            opacity: 0;
+        }
+
         .container {
             flex-direction: column;
             text-align: center;
+
             .reviews-titles {
                 margin: auto;
                 margin-bottom: 2rem;
+
                 ul {
                     list-style: none;
                     display: flex;
-                    .reviews-title {
-                        border: 1px solid #fff;
-                        font-family: 'Muller Bold';
-                        margin-right: 2.6rem;
-                        font-size: 1.4rem;
-                        text-transform: uppercase;
-                        letter-spacing: 0.7px;
-                        padding: 1rem 2.5rem;
-                        cursor: pointer;
-                        &:hover {         
-                            color: #e50000;
-                        }
+
+
+                }
+            }
+
+            .row {
+                transition: all ease-out 0.4s;
+            }
+
+            .review {
+                img {
+                    margin-bottom: 1rem;
+                }
+
+                margin: 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                a {
+                    color: #313131;
+                    font-family: 'Muller Light';
+                    font-size: 1.8rem;
+                }
+            }
+        }
+    }
+
+    .partners {
+        padding: 5rem 0;
+        color: #313131;
+        font-family: 'Muller Regular';
+
+        .container {
+            flex-direction: column;
+
+            .section-title {
+                font-family: 'Muller Bold';
+            }
+
+            .partner {
+                display: flex;
+                position: relative;
+                justify-content: center;
+                align-items: center;
+                cursor: pointer;
+
+                &-description {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    background-color: #26b83a;
+                    min-height: 100%;
+                    width: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    opacity: 0;
+                    box-shadow: 0 10px 10px rgba(38, 184, 58, 0.2);
+                    transition: all ease-out 0.4s;
+
+                    &:hover {
+                        opacity: 1;
+                    }
+
+                    p {
+                        font-family: 'Muller Light';
+                        color: #fff;
+                        font-size: 1.2rem;
+                        padding: 1rem 0.5rem;
                     }
                 }
             }
-            .row {
-                transition: reviewIn ease-out 1s;
+        }
+    }
+
+    .rates {
+        background-color: #f5f5f5;
+        color: #313131;
+        font-family: "Muller Regular";
+        padding: 5rem 0;
+
+        .container {
+            flex-direction: column;
+            text-align: left;
+
+            .section-title {
+                font-family: 'Muller Bold';
             }
-            .review {
-                border: 1px solid red;
-                min-height: 12rem;
-                min-width: 12rem;
-                margin: 1rem;
+
+            .section-subtitle {
+                font-size: 1.6rem;
+                margin-bottom: 3rem;
+                font-family: 'Muller Bold';
+            }
+
+            .rates-choosing {
                 display: flex;
-                justify-content: center;
+                justify-content: space-between;
                 align-items: center;
-            }
-            @keyframes reviewIn {
-                0% {
-                    opacity: 1;
+
+                .rates-choose {
+                    font-size: 1.6rem;
                 }
-                100% {
-                    opacity: 0;
+
+                .rates-choices {
+                    font-family: 'Muller Bold';
+                    font-size: 1.4rem;
+                    display: flex;
+                    justify-content: space-between;
+                    flex-basis: 21%;
+                    text-transform: uppercase;
+                    border: 1px solid #f5f5f5;
+                    letter-spacing: 0.7px;
+                    .reviews-title {
+                        margin: 0;
+                        padding: 1rem 1rem;
+                    }
+                }
+                
+            }
+            .cards {
+                padding: 2rem 0;
+                display: flex;
+                justify-content: space-around;
+                .card {
+                    border: 1px solid #e8e8e8;
+                    background-color: #ffffff;
+                    min-height: 50rem;
+                    padding: 2rem 4rem;
+                    text-align: center;
+                    &-title {
+                        color: #000;
+                        text-align: center;
+                        font-size: 2rem;
+                        margin-bottom: 2rem;
+                        strong {
+                            font-family: 'Muller Bold';
+                        }
+                    }
+                    img {
+                        display: block;
+                        margin: 0 auto;
+                        margin-bottom: 2rem;
+                    }
+                    .uls {
+                        display: flex;
+                        font-size: 1.4rem;
+                        min-height: 370px;
+                        ul {
+                            list-style: none;
+                            li {
+                                padding: 1rem 0;
+                                color: #000;
+                            }
+                        }
+                        .ul-1 {
+                            text-align: left;
+                        }
+                        .ul-2 {
+                            text-align: right;
+                        }
+                        
+                    }
+                    .card-price {
+                        margin: 2rem 0;
+                        font-size: 1.7rem;
+                        strong {
+                            font-family: 'Muller Bold';
+                            font-size: 2.4rem;
+                        }
+                    }
+                    button {
+                        font-size: 1.8rem;
+                        min-height: 4.5rem;
+                        width: 100%;
+                        height: 0;
+                        font-family: 'Muller Bold';
+                    }
+                    .card-consulting {
+                        margin-bottom: 2rem;
+                        button {
+                            background: #012e81;
+                        }
+                    }
                 }
             }
         }

@@ -13,21 +13,29 @@ reviewsTitles.forEach((elem) => {
     });
 });
 
+
+
 const reviews = document.querySelectorAll('.review'),
 row = document.querySelector('.reviews .row');
 
 reviewsTitles.forEach((elem) => {
     elem.addEventListener('click', () => {
-        reviews.forEach((review) => {
-            row.style.display = 'none';
-            review.parentNode.style.display = 'none';
-            if (elem.dataset.review === 'all') {
-                review.parentNode.style.display = '';
-            }
-            else if (elem.dataset.review === review.dataset.review) {
-                review.parentNode.style.display = '';
-            }
-        });
+        row.classList.toggle('change-opacity');
+        setTimeout(() => {
+            reviews.forEach((review) => {
+                review.parentNode.style.display = 'none';
+                    if (elem.dataset.review === 'all') {
+                        review.parentNode.style.display = '';
+                    }
+                    else if (elem.dataset.review === review.dataset.review) {
+                        review.parentNode.style.display = '';
+                    }
+            });
+            row.style.opaciity = '1';
+            row.classList.toggle('change-opacity');
+        }, 600);
+        
     });
     
 });
+
