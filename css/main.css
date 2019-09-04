@@ -191,29 +191,36 @@ body main .jurist-text p span {
   font-family: 'Proxima Nova Bd';
 }
 
-body main .jurist-button button {
+body main .jurist button {
   min-width: 30rem;
   min-height: 6rem;
   font-size: 1.8rem;
   font-family: 'Proxima Nova Rg';
 }
 
-body main .features .container {
-  padding: 10rem 0;
-  display: block;
+body main .features {
+  padding: 7rem 0;
   color: #1c1c1c;
+}
+
+body main .features .container {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body main .features .container .feature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 1rem;
-  min-height: 6rem;
-  margin-left: 10%;
+  margin: 3rem;
 }
 
 body main .features .container .feature p {
