@@ -22,6 +22,10 @@ body {
         list-style: none;
     }
 
+    section {
+        padding: 2rem 0;
+    }
+
     .li_focus {
         border-radius: 5px;
         color: #e50000;
@@ -49,8 +53,8 @@ body {
     }
 
     .button {
-        width: 14rem;
-        height: 3rem;
+        min-width: 14rem;
+        min-height: 3rem;
         background-color: #c91111;
         color: #fff;
         border: none;
@@ -131,23 +135,18 @@ body {
         }
 
         .jurist {
-            background-image: url(../img/jurist_BG.png);
-            background-repeat: no-repeat;
-            padding: 1rem 0 7rem;
-
+            background: url(../img/jurist_BG.png) no-repeat;
+            padding: 10rem 0 12rem;
             .container {
-                display: flex;
-                flex-flow: column;
-                justify-content: flex-start;
+                flex-direction: column;
                 align-items: flex-start;
+                padding-left: 10%;
             }
 
-            &_text {
+            &-text {
                 color: #fff;
-                padding-top: 10rem;
-                max-width: 45.1rem;
-                margin-left: 10%;
-                margin-bottom: 4rem;
+                max-width: 51rem;
+                margin-bottom: 3rem;
                 text-align: left;
 
                 h2 {
@@ -158,20 +157,23 @@ body {
                     span {
                         font-size: 4rem;
                         text-transform: uppercase;
+                        font-family: 'Proxima Nova Extra Bold';
                     }
                 }
 
                 p {
                     font-size: 2.4rem;
+                    font-family: 'Proxima Nova Lt';
+                    span {
+                        font-family: 'Proxima Nova Bd';
+                    }
                 }
             }
 
-            &-button {
-                margin-left: 10%;
-
+            &-button {       
                 button {
-                    width: 30rem;
-                    height: 6rem;
+                    min-width: 30rem;
+                    min-height: 6rem;
                     font-size: 1.8rem;
                     font-family: 'Proxima Nova Rg';
                 }
