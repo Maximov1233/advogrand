@@ -231,16 +231,19 @@ body main .features .container .feature p {
 
 body main .about {
   background: #1c1c1c url(../img/bg.png) no-repeat top;
-  min-height: 600px;
   color: #fff;
+  padding: 7rem 0;
 }
 
 body main .about .container {
-  display: block;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 body main .about .container .section-title {
-  padding: 10rem 0 3rem;
+  margin-bottom: 5rem;
 }
 
 body main .about .container .section-description {
@@ -257,12 +260,8 @@ body main .about .container .section-achievements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body main .about .container .section-achievements .achievement {
@@ -274,7 +273,8 @@ body main .about .container .section-achievements .achievement span {
 }
 
 body main .about .container .section-achievements .achievement span strong {
-  font-size: 4.8rem;
+  font-family: 'Proxima Nova Bd';
+  font-size: 4.5rem;
 }
 
 body main .description {

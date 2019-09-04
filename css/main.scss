@@ -205,14 +205,13 @@ body {
 
         .about {
             background: #1c1c1c url(../img/bg.png) no-repeat top;
-            min-height: 600px;
             color: #fff;
-
+            padding: 7rem 0;
             .container {
-                display: block;
+                flex-direction: column;
 
                 .section-title {
-                    padding: 10rem 0 3rem;
+                    margin-bottom: 5rem;
                 }
 
                 .section-description {
@@ -227,8 +226,7 @@ body {
 
                 .section-achievements {
                     display: flex;
-                    justify-content: center;
-                    align-items: center;
+                    justify-content: space-around;
 
                     .achievement {
                         margin-right: 8rem;
@@ -237,7 +235,8 @@ body {
                             font-size: 1.6rem;
 
                             strong {
-                                font-size: 4.8rem;
+                                font-family: 'Proxima Nova Bd';
+                                font-size: 4.5rem;
                             }
                         }
 
