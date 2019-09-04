@@ -1,0 +1,85 @@
+@font-face {
+    font-family: 'Muller Light';
+    src: url('../fonts/MullerNarrow-Light.eot');
+    src: url('../fonts/MullerNarrow-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerNarrow-Light.woff2') format('woff2'),
+        url('../fonts/MullerNarrow-Light.woff') format('woff'),
+        url('../fonts/MullerNarrow-Light.ttf') format('truetype'),
+        url('../fonts/MullerNarrow-Light.svg#MullerNarrow-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller Medium';
+    src: url('../fonts/MullerNarrow-Medium.eot');
+    src: url('../fonts/MullerNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerNarrow-Medium.woff2') format('woff2'),
+        url('../fonts/MullerNarrow-Medium.woff') format('woff'),
+        url('../fonts/MullerNarrow-Medium.ttf') format('truetype'),
+        url('../fonts/MullerNarrow-Medium.svg#MullerNarrow-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller Bold';
+    src: url('../fonts/MullerBold.eot');
+    src: url('../fonts/MullerBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerBold.woff2') format('woff2'),
+        url('../fonts/MullerBold.woff') format('woff'),
+        url('../fonts/MullerBold.ttf') format('truetype'),
+        url('../fonts/MullerBold.svg#MullerBold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Muller Regular';
+    src: url('../fonts/MullerRegular.eot');
+    src: url('../fonts/MullerRegular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/MullerRegular.woff2') format('woff2'),
+        url('../fonts/MullerRegular.woff') format('woff'),
+        url('../fonts/MullerRegular.ttf') format('truetype'),
+        url('../fonts/MullerRegular.svg#MullerRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Regular.eot');
+    src: url('../fonts/ProximaNova-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff'),
+        url('../fonts/ProximaNova-Regular.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Regular.svg#ProximaNova-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Proxima Nova Bd';
+    src: url('../fonts/ProximaNova-Bold.eot');
+    src: url('../fonts/ProximaNova-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff'),
+        url('../fonts/ProximaNova-Bold.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Bold.svg#ProximaNova-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('../fonts/ProximaNova-Light.eot');
+    src: url('../fonts/ProximaNova-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/ProximaNova-Light.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Light.woff') format('woff'),
+        url('../fonts/ProximaNova-Light.ttf') format('truetype'),
+        url('../fonts/ProximaNova-Light.svg#ProximaNova-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}

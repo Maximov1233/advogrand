@@ -1,59 +1,4 @@
-@font-face {
-  font-family: 'Muller Light';
-  src: url("../fonts/MullerNarrow-Light.eot");
-  src: url("../fonts/MullerNarrow-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerNarrow-Light.woff2") format("woff2"), url("../fonts/MullerNarrow-Light.woff") format("woff"), url("../fonts/MullerNarrow-Light.ttf") format("truetype"), url("../fonts/MullerNarrow-Light.svg#MullerNarrow-Light") format("svg");
-  font-weight: 300;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Muller Medium';
-  src: url("../fonts/MullerNarrow-Medium.eot");
-  src: url("../fonts/MullerNarrow-Medium.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerNarrow-Medium.woff2") format("woff2"), url("../fonts/MullerNarrow-Medium.woff") format("woff"), url("../fonts/MullerNarrow-Medium.ttf") format("truetype"), url("../fonts/MullerNarrow-Medium.svg#MullerNarrow-Medium") format("svg");
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Muller Bold';
-  src: url("../fonts/MullerBold.eot");
-  src: url("../fonts/MullerBold.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerBold.woff2") format("woff2"), url("../fonts/MullerBold.woff") format("woff"), url("../fonts/MullerBold.ttf") format("truetype"), url("../fonts/MullerBold.svg#MullerBold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Muller Regular';
-  src: url("../fonts/MullerRegular.eot");
-  src: url("../fonts/MullerRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/MullerRegular.woff2") format("woff2"), url("../fonts/MullerRegular.woff") format("woff"), url("../fonts/MullerRegular.ttf") format("truetype"), url("../fonts/MullerRegular.svg#MullerRegular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova Rg';
-  src: url("../fonts/ProximaNova-Regular.eot");
-  src: url("../fonts/ProximaNova-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Regular.woff2") format("woff2"), url("../fonts/ProximaNova-Regular.woff") format("woff"), url("../fonts/ProximaNova-Regular.ttf") format("truetype"), url("../fonts/ProximaNova-Regular.svg#ProximaNova-Regular") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova Bd';
-  src: url("../fonts/ProximaNova-Bold.eot");
-  src: url("../fonts/ProximaNova-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Bold.woff2") format("woff2"), url("../fonts/ProximaNova-Bold.woff") format("woff"), url("../fonts/ProximaNova-Bold.ttf") format("truetype"), url("../fonts/ProximaNova-Bold.svg#ProximaNova-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Proxima Nova Lt';
-  src: url("../fonts/ProximaNova-Light.eot");
-  src: url("../fonts/ProximaNova-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/ProximaNova-Light.woff2") format("woff2"), url("../fonts/ProximaNova-Light.woff") format("woff"), url("../fonts/ProximaNova-Light.ttf") format("truetype"), url("../fonts/ProximaNova-Light.svg#ProximaNova-Light") format("svg");
-  font-weight: 300;
-  font-style: normal;
-}
-
+@import url(./fonts.css);
 * {
   margin: 0;
   padding: 0;
@@ -67,11 +12,15 @@ html {
 
 body {
   font-family: 'Proxima Nova Rg';
-  height: 1000rem;
 }
 
 body a {
   text-decoration: none;
+  color: #1c1c1c;
+}
+
+body ul {
+  list-style: none;
 }
 
 body .li_focus {
@@ -80,9 +29,9 @@ body .li_focus {
   border: 2px solid #e42626 !important;
 }
 
-body .header-phone h3 {
-  font-size: 1.4rem;
-  color: #1c1c1c;
+body .header-phone a {
+  font-family: 'Proxima Nova Bd';
+  font-size: 1.6rem;
 }
 
 body .section-title {
@@ -129,54 +78,53 @@ body .reviews-title:hover {
 }
 
 body .header {
-  padding-top: 1rem;
-  min-height: 5rem;
+  padding: 1rem 0;
+  border-bottom: 1px solid #e8e8e8;
+  color: #1c1c1c;
 }
 
-body .header-nav nav ul {
+body .header .container {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .header .container ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  list-style: none;
 }
 
-body .header-nav nav ul li {
+body .header .container ul .nav__item {
   margin-right: 3.4rem;
   font-size: 1.4rem;
 }
 
-body .header-nav nav ul li a {
-  color: #1c1c1c;
-}
-
-body .download {
+body main .download {
   font-family: 'Proxima Nova Rg';
   color: #1c1c1c;
   padding: 1rem 0;
 }
 
-body .download .container {
+body main .download .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-body .download .container .header-phone a {
-  font-size: 1.8rem;
+body main .download .container .download-slogan {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
 }
 
-body .download .container .download-slogan {
-  text-align: center;
-}
-
-body .download .container .download-slogan p {
+body main .download .container .download-slogan p {
   font-size: 1.4rem;
 }
 
-body .download .container .app-download {
+body main .download .container .app-download {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,24 +133,24 @@ body .download .container .app-download {
   width: 9rem;
 }
 
-body .download .container .app-download__link {
+body main .download .container .app-download__link {
   border: 1px solid #e42626;
   border-radius: 5px;
   padding: 7px;
 }
 
-body .download .container .app-download__link svg {
+body main .download .container .app-download__link svg {
   width: 30px;
   height: 30px;
 }
 
-body .jurist {
+body main .jurist {
   background-image: url(../img/jurist_BG.png);
   background-repeat: no-repeat;
   padding: 1rem 0 7rem;
 }
 
-body .jurist .container {
+body main .jurist .container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -218,7 +166,7 @@ body .jurist .container {
           align-items: flex-start;
 }
 
-body .jurist_text {
+body main .jurist_text {
   color: #fff;
   padding-top: 10rem;
   max-width: 45.1rem;
@@ -227,39 +175,39 @@ body .jurist_text {
   text-align: left;
 }
 
-body .jurist_text h2 {
+body main .jurist_text h2 {
   font-family: 'Proxima Nova Bd';
   font-size: 3.2rem;
   font-weight: 700;
 }
 
-body .jurist_text h2 span {
+body main .jurist_text h2 span {
   font-size: 4rem;
   text-transform: uppercase;
 }
 
-body .jurist_text p {
+body main .jurist_text p {
   font-size: 2.4rem;
 }
 
-body .jurist-button {
+body main .jurist-button {
   margin-left: 10%;
 }
 
-body .jurist-button button {
+body main .jurist-button button {
   width: 30rem;
   height: 6rem;
   font-size: 1.8rem;
   font-family: 'Proxima Nova Rg';
 }
 
-body .features .container {
+body main .features .container {
   padding: 10rem 0;
   display: block;
   color: #1c1c1c;
 }
 
-body .features .container .feature {
+body main .features .container .feature {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -271,37 +219,37 @@ body .features .container .feature {
   margin-left: 10%;
 }
 
-body .features .container .feature p {
+body main .features .container .feature p {
   font-size: 1.6rem;
   margin-left: 2rem;
   width: 22rem;
 }
 
-body .about {
+body main .about {
   background: #1c1c1c url(../img/bg.png) no-repeat top;
   min-height: 600px;
   color: #fff;
 }
 
-body .about .container {
+body main .about .container {
   display: block;
 }
 
-body .about .container .section-title {
+body main .about .container .section-title {
   padding: 10rem 0 3rem;
 }
 
-body .about .container .section-description {
+body main .about .container .section-description {
   max-width: 80%;
   margin: auto;
   margin-bottom: 6rem;
 }
 
-body .about .container .section-description p {
+body main .about .container .section-description p {
   font-size: 1.6rem;
 }
 
-body .about .container .section-achievements {
+body main .about .container .section-achievements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,50 +261,50 @@ body .about .container .section-achievements {
           align-items: center;
 }
 
-body .about .container .section-achievements .achievement {
+body main .about .container .section-achievements .achievement {
   margin-right: 8rem;
 }
 
-body .about .container .section-achievements .achievement span {
+body main .about .container .section-achievements .achievement span {
   font-size: 1.6rem;
 }
 
-body .about .container .section-achievements .achievement span strong {
+body main .about .container .section-achievements .achievement span strong {
   font-size: 4.8rem;
 }
 
-body .description {
+body main .description {
   padding: 10rem 0;
   color: #1c1c1c;
   background-color: #f5f5f5;
 }
 
-body .description .container {
+body main .description .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-body .description .container .section-title {
+body main .description .container .section-title {
   margin-bottom: 4rem;
 }
 
-body .description .container .description__item {
+body main .description .container .description__item {
   padding: 1rem 7rem;
 }
 
-body .description .container .description__item .description__text {
+body main .description .container .description__item .description__text {
   margin-top: 0.3rem;
   font-size: 1.6rem;
 }
 
-body .advantages {
+body main .advantages {
   color: #1c1c1c;
   padding: 2rem 0 4rem;
 }
 
-body .advantages .container {
+body main .advantages .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -364,16 +312,12 @@ body .advantages .container {
   text-align: unset;
 }
 
-body .advantages .container ul {
-  list-style: none;
-}
-
-body .advantages .container .section-title {
+body main .advantages .container .section-title {
   text-align: center;
   padding: 10rem 0 8rem;
 }
 
-body .advantages .container .advantages-description {
+body main .advantages .container .advantages-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -382,27 +326,27 @@ body .advantages .container .advantages-description {
           justify-content: center;
 }
 
-body .advantages .container .advantages-description li {
+body main .advantages .container .advantages-description li {
   font-size: 1.3rem;
   margin-bottom: 3rem;
 }
 
-body .advantages .container .advantages-description .comparing {
+body main .advantages .container .advantages-description .comparing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .advantages .container .advantages-description .comparing .advantages__list {
+body main .advantages .container .advantages-description .comparing .advantages__list {
   text-align: right;
   padding: 3rem 1rem 0;
 }
 
-body .advantages .container .advantages-description .comparing .advantages__list li:first-child {
+body main .advantages .container .advantages-description .comparing .advantages__list li:first-child {
   opacity: 0;
 }
 
-body .advantages .container .advantages-description .comparing__advogrand {
+body main .advantages .container .advantages-description .comparing__advogrand {
   background-color: #26b83a;
   text-align: center;
   color: #fff;
@@ -410,22 +354,22 @@ body .advantages .container .advantages-description .comparing__advogrand {
   padding: 3rem 1rem;
 }
 
-body .advantages .container .advantages-description .comparing__others {
+body main .advantages .container .advantages-description .comparing__others {
   border: 1px solid #e8e8e8;
   text-align: center;
   padding: 3rem 1rem;
 }
 
-body .advantages .container .advantages-description .statistics-description {
+body main .advantages .container .advantages-description .statistics-description {
   margin-left: 4rem;
 }
 
-body .advantages .container .advantages-description .statistics-description .section-title {
+body main .advantages .container .advantages-description .statistics-description .section-title {
   padding: 0;
   font-size: 1.6rem;
 }
 
-body .advantages .container .advantages-description .statistics-description .statistics-list li {
+body main .advantages .container .advantages-description .statistics-description .statistics-list li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -436,13 +380,13 @@ body .advantages .container .advantages-description .statistics-description .sta
   padding: 1rem 0;
 }
 
-body .advantages .container .advantages-description .statistics-description .statistics-list li strong {
+body main .advantages .container .advantages-description .statistics-description .statistics-list li strong {
   font-family: 'Proxima Nova Bd';
   margin-left: 2rem;
   margin-right: 0.5rem;
 }
 
-body .advantages .container .advantages-description .statistics-button button {
+body main .advantages .container .advantages-description .statistics-button button {
   font-size: 1.6rem;
   font-weight: 700;
   min-width: 27rem;
@@ -450,71 +394,67 @@ body .advantages .container .advantages-description .statistics-button button {
   font-family: 'Proxima Nova Bd';
 }
 
-body .consulting {
+body main .consulting {
   background: url(../img/consulting_bg.jpg) no-repeat top;
   color: #fff;
   font-family: 'Muller Regular';
   padding: 10rem 0 2rem;
 }
 
-body .consulting .container {
+body main .consulting .container {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   text-align: unset;
 }
 
-body .consulting .container .section-title {
+body main .consulting .container .section-title {
   text-align: left;
   font-family: 'Muller Bold';
 }
 
-body .consulting .container .consulting-description {
+body main .consulting .container .consulting-description {
   padding-left: 10%;
 }
 
-body .consulting .container .consulting-description ul {
-  list-style: none;
-}
-
-body .consulting .container .consulting-description ul li {
+body main .consulting .container .consulting-description ul li {
   font-size: 1.8rem;
   font-family: 'Muller Light';
   letter-spacing: 1.2px;
   padding: 1rem 0;
 }
 
-body .consulting .container .consulting-description ul li a {
+body main .consulting .container .consulting-description ul li a {
   color: inherit;
   text-decoration: underline;
 }
 
-body .consulting .container .consulting-description ul li span {
+body main .consulting .container .consulting-description ul li span {
   margin-right: 2rem;
   color: #d82020;
   font-family: 'Muller Medium';
 }
 
-body .consulting .container .consulting-download {
+body main .consulting .container .consulting-download {
   padding-top: 3rem;
 }
 
-body .consulting .container .consulting-download a {
+body main .consulting .container .consulting-download a {
   display: block;
   margin-bottom: 3rem;
 }
 
-body .reviews {
+body main .reviews {
   color: #313131;
   font-family: 'Muller Regular';
   background-color: #f5f5f5;
   padding: 4rem 0;
 }
 
-body .reviews .change-opacity {
+body main .reviews .change-opacity {
   opacity: 0;
 }
 
-body .reviews .container {
+body main .reviews .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -522,24 +462,23 @@ body .reviews .container {
   text-align: center;
 }
 
-body .reviews .container .reviews-titles {
+body main .reviews .container .reviews-titles {
   margin: auto;
   margin-bottom: 2rem;
 }
 
-body .reviews .container .reviews-titles ul {
-  list-style: none;
+body main .reviews .container .reviews-titles ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-body .reviews .container .row {
+body main .reviews .container .row {
   -webkit-transition: all ease-out 0.4s;
   transition: all ease-out 0.4s;
 }
 
-body .reviews .container .review {
+body main .reviews .container .review {
   margin: 1rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -556,34 +495,34 @@ body .reviews .container .review {
           align-items: center;
 }
 
-body .reviews .container .review img {
+body main .reviews .container .review img {
   margin-bottom: 1rem;
 }
 
-body .reviews .container .review a {
+body main .reviews .container .review a {
   color: #313131;
   font-family: 'Muller Light';
   font-size: 1.8rem;
 }
 
-body .partners {
+body main .partners {
   padding: 5rem 0;
   color: #313131;
   font-family: 'Muller Regular';
 }
 
-body .partners .container {
+body main .partners .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
 
-body .partners .container .section-title {
+body main .partners .container .section-title {
   font-family: 'Muller Bold';
 }
 
-body .partners .container .partner {
+body main .partners .container .partner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -597,7 +536,7 @@ body .partners .container .partner {
   cursor: pointer;
 }
 
-body .partners .container .partner-description {
+body main .partners .container .partner-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -620,25 +559,25 @@ body .partners .container .partner-description {
   transition: all ease-out 0.4s;
 }
 
-body .partners .container .partner-description:hover {
+body main .partners .container .partner-description:hover {
   opacity: 1;
 }
 
-body .partners .container .partner-description p {
+body main .partners .container .partner-description p {
   font-family: 'Muller Light';
   color: #fff;
   font-size: 1.2rem;
   padding: 1rem 0.5rem;
 }
 
-body .rates {
+body main .rates {
   background-color: #f5f5f5;
   color: #313131;
   font-family: "Muller Regular";
   padding: 5rem 0;
 }
 
-body .rates .container {
+body main .rates .container {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -646,17 +585,17 @@ body .rates .container {
   text-align: left;
 }
 
-body .rates .container .section-title {
+body main .rates .container .section-title {
   font-family: 'Muller Bold';
 }
 
-body .rates .container .section-subtitle {
+body main .rates .container .section-subtitle {
   font-size: 1.6rem;
   margin-bottom: 3rem;
   font-family: 'Muller Bold';
 }
 
-body .rates .container .rates-choosing {
+body main .rates .container .rates-choosing {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -668,11 +607,11 @@ body .rates .container .rates-choosing {
           align-items: center;
 }
 
-body .rates .container .rates-choosing .rates-choose {
+body main .rates .container .rates-choosing .rates-choose {
   font-size: 1.6rem;
 }
 
-body .rates .container .rates-choosing .rates-choices {
+body main .rates .container .rates-choosing .rates-choices {
   font-family: 'Muller Bold';
   font-size: 1.4rem;
   display: -webkit-box;
@@ -688,21 +627,22 @@ body .rates .container .rates-choosing .rates-choices {
   letter-spacing: 0.7px;
 }
 
-body .rates .container .rates-choosing .rates-choices .reviews-title {
+body main .rates .container .rates-choosing .rates-choices .reviews-title {
   margin: 0;
   padding: 1rem 1rem;
 }
 
-body .rates .container .cards {
+body main .rates .container .cards {
   padding: 2rem 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-body .rates .container .cards .card {
+body main .rates .container .cards .card {
   border: 1px solid #e8e8e8;
   background-color: #ffffff;
   min-height: 50rem;
@@ -710,24 +650,24 @@ body .rates .container .cards .card {
   text-align: center;
 }
 
-body .rates .container .cards .card-title {
+body main .rates .container .cards .card-title {
   color: #000;
   text-align: center;
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 
-body .rates .container .cards .card-title strong {
+body main .rates .container .cards .card-title strong {
   font-family: 'Muller Bold';
 }
 
-body .rates .container .cards .card img {
+body main .rates .container .cards .card img {
   display: block;
   margin: 0 auto;
   margin-bottom: 2rem;
 }
 
-body .rates .container .cards .card .uls {
+body main .rates .container .cards .card .uls {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -735,34 +675,30 @@ body .rates .container .cards .card .uls {
   min-height: 370px;
 }
 
-body .rates .container .cards .card .uls ul {
-  list-style: none;
-}
-
-body .rates .container .cards .card .uls ul li {
+body main .rates .container .cards .card .uls ul li {
   padding: 1rem 0;
   color: #000;
 }
 
-body .rates .container .cards .card .uls .ul-1 {
+body main .rates .container .cards .card .uls .ul-1 {
   text-align: left;
 }
 
-body .rates .container .cards .card .uls .ul-2 {
+body main .rates .container .cards .card .uls .ul-2 {
   text-align: right;
 }
 
-body .rates .container .cards .card .card-price {
+body main .rates .container .cards .card .card-price {
   margin: 2rem 0;
   font-size: 1.7rem;
 }
 
-body .rates .container .cards .card .card-price strong {
+body main .rates .container .cards .card .card-price strong {
   font-family: 'Muller Bold';
   font-size: 2.4rem;
 }
 
-body .rates .container .cards .card button {
+body main .rates .container .cards .card button {
   font-size: 1.8rem;
   min-height: 4.5rem;
   width: 100%;
@@ -770,11 +706,126 @@ body .rates .container .cards .card button {
   font-family: 'Muller Bold';
 }
 
-body .rates .container .cards .card .card-consulting {
+body main .rates .container .cards .card .card-consulting {
   margin-bottom: 2rem;
 }
 
-body .rates .container .cards .card .card-consulting button {
+body main .rates .container .cards .card .card-consulting button {
   background: #012e81;
+}
+
+body main .contacts {
+  padding: 7rem 0;
+  font-family: 'Muller Regular';
+}
+
+body main .contacts .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: left;
+}
+
+body main .contacts .container .contacts-form .section-title {
+  font-family: 'Muller Bold';
+  font-size: 2rem;
+  margin-bottom: 3rem;
+}
+
+body main .contacts .container .contacts-form .form {
+  width: 85%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body main .contacts .container .contacts-form .form label {
+  font-size: 1.4rem;
+}
+
+body main .contacts .container .contacts-form .form__input {
+  margin: 1.5rem 0;
+  padding: 1rem 0;
+  border-radius: 5px;
+  border: 1px solid #dddddd;
+}
+
+body main .contacts .container .contacts-form .form__input:last-child {
+  padding: 1rem 0 4rem;
+}
+
+body main .contacts .container .contacts-form .form__button {
+  width: 100%;
+  margin-bottom: 2rem;
+  font-family: 'Muller Bold';
+  font-size: 1.8rem;
+  min-height: 5rem;
+}
+
+body main .contacts .container .contacts-form .form p {
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+body main .contacts .container .contacts-list .section-title {
+  font-size: 3rem;
+  margin-bottom: 7rem;
+}
+
+body main .contacts .container .contacts-list .contacts-title {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+body main .contacts .container .contacts-list a {
+  display: block;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+  color: #000;
+}
+
+body main .contacts .container .contacts-list .contacts-phone {
+  font-family: 'Muller Bold';
+}
+
+body main .contacts .container .contacts-list .contacts-email {
+  text-decoration: underline;
+}
+
+body main .contacts .container .contacts-list p {
+  font-size: 1.7rem;
+  max-width: 51%;
+}
+
+body .footer {
+  background-color: #0e0e0e;
+  padding: 3rem 0;
+}
+
+body .footer .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .footer .container .developer {
+  color: #fff;
+  font-size: 1.5rem;
 }
 /*# sourceMappingURL=main.css.map */

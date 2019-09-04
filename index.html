@@ -19,35 +19,34 @@
         <div class="container">
 
             <div class="header-phone">
-                <h3>+7 499 322-85-80</h3>
+                <a href="tel:+74993228580">+7 499 322-85-80</a>
             </div>
 
             <div class="header-nav">
                 <nav>
                     <ul>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Как мы работаем</a>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Как мы работаем</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Преимущества</a>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Преимущества</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Отзывы</a>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Отзывы</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Тарифы</a>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Тарифы</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Партнеры</a>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Партнеры</a>
                         </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">Контакты</a>
+                        <li class="nav__item">
+                            <a href="#" class="nav__link">Контакты</a>
                         </li>
 
                     </ul>
                 </nav>
             </div>
-
 
             <div class="header-button">
                 <button class="button">Перезвоните мне</button>
@@ -69,6 +68,9 @@
                 </div>
                 <div class="download-slogan">
                     <p>Ваш личный юрист всегда на связи</p>
+                </div>
+                <div class="header-phone">
+                    <a href="tel:+7493228580">+7 499 322-85-80</a>
                 </div>
                 <div class="app-download">
                     <div class="android-download app-download__link">
@@ -631,12 +633,53 @@
                 </div>
             </div>
         </section>
+
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts-form">
+                    <div class="section-title">
+                        <h3>Напишите нам письмо или задайте <br>свой вопрос</h3>
+                    </div>
+                    <form action="#" class="form">
+                        <label for="name">Введите своё имя</label>
+                        <input type="text" name="name" id="name" class="input form__input">
+                        <label for="mail">Ваша электронная почта</label>
+                        <input type="text" name="mail" id="mail" class="input form__input">
+                        <label for="question">Сообщение или вопрос</label>
+                        <input type="text" name="question" id="question" class="input form__input">
+                        <button class="button form__button">Заказать звонок консультанта</button>
+                        <p>Перезвоним вам в течении 5 минут</p>
+                    </form>
+                </div>
+                <div class="contacts-list">
+                    <div class="section-title">
+                        <h3>Контакты</h3>
+                    </div>
+                    <h3 class="contacts-title">Телефон для покупки карт:</h3>
+                    <a href="tel:+74993228580" class="contacts-phone">+7 499 322-85-80</a>
+                    <h3 class="contacts-title">Email:</h3>
+                    <a href="mail:info@advogrand.net" class="contacts-email">info@advogrand.net</a>
+                    <h3 class="contacts-title">Время работы:</h3>
+                    <p>С понедельника по пятницу: 9:00&nbsp;—&nbsp;22:00<br><br>В праздничные и выходные дни: только
+                        телефонные&nbsp; консультации <br><br>10:00 — 20:00</p>
+                </div>
+            </div>
+        </section>
     </main>
     <!-- end main -->
 
     <!-- footer -->
-    <footer>
-
+    <footer class="footer">
+        <div class="container">
+            <div class="logo">
+                <a href="/">
+                    <img src="./img/footer-logo.png" alt="Advogrand">
+                </a>
+            </div>
+            <div class="developer">
+                <p>Разработал: Максим Матухно</p>
+            </div>
+        </div>
     </footer>
     <!-- end footer -->
     <script src="./src/main.js"></script>
