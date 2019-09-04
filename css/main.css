@@ -103,43 +103,42 @@ body .header .container ul .nav__item {
   font-size: 1.4rem;
 }
 
-body main .download {
-  font-family: 'Proxima Nova Rg';
+body main .second-header {
   color: #1c1c1c;
   padding: 1rem 0;
 }
 
-body main .download .container {
+body main .second-header .container {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-body main .download .container .download-slogan {
+body main .second-header .container .second-header__slogan {
   -ms-flex-preferred-size: 60%;
       flex-basis: 60%;
 }
 
-body main .download .container .download-slogan p {
+body main .second-header .container .second-header__slogan p {
   font-size: 1.4rem;
 }
 
-body main .download .container .app-download {
+body main .second-header .container .app-download {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 9rem;
+  min-width: 9rem;
 }
 
-body main .download .container .app-download__link {
+body main .second-header .container .app-download__link {
   border: 1px solid #e42626;
   border-radius: 5px;
   padding: 7px;
 }
 
-body main .download .container .app-download__link svg {
+body main .second-header .container .app-download__link svg {
   width: 30px;
   height: 30px;
 }

@@ -96,20 +96,15 @@ body {
     }
 
     main {
-        .download {
-
-            font-family: 'Proxima Nova Rg';
+        .second-header {
             color: #1c1c1c;
             padding: 1rem 0;
 
             .container {
                 align-items: center;
-                
-
-                .download-slogan {
-
+            
+                .second-header__slogan {
                     flex-basis: 60%;
-
                     p {
                         font-size: 1.4rem;
                     }
@@ -118,7 +113,7 @@ body {
                 .app-download {
                     display: flex;
                     justify-content: space-around;
-                    width: 9rem;
+                    min-width: 9rem;
 
                     &__link {
                         border: 1px solid #e42626;
