@@ -148,7 +148,7 @@ body main .second-header .container .app-download__link svg {
 }
 
 body main .jurist {
-  background: url(../img/jurist_BG.png) no-repeat;
+  background: #1c1c1c url(../img/jurist_BG.png) no-repeat;
   padding: 10rem 0 12rem;
 }
 
@@ -408,44 +408,39 @@ body main .consulting {
   background: url(../img/consulting_bg.jpg) no-repeat top;
   color: #fff;
   font-family: 'Muller Regular';
-  padding: 10rem 0 2rem;
+  padding: 7rem 0 5rem;
 }
 
 body main .consulting .container {
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-align: unset;
+  text-align: left;
 }
 
 body main .consulting .container .section-title {
-  text-align: left;
   font-family: 'Muller Bold';
 }
 
-body main .consulting .container .consulting-description {
-  padding-left: 10%;
-}
-
-body main .consulting .container .consulting-description ul li {
+body main .consulting .container .consulting-description li {
   font-size: 1.8rem;
   font-family: 'Muller Light';
   letter-spacing: 1.2px;
   padding: 1rem 0;
 }
 
-body main .consulting .container .consulting-description ul li a {
+body main .consulting .container .consulting-description li a {
   color: inherit;
   text-decoration: underline;
 }
 
-body main .consulting .container .consulting-description ul li span {
-  margin-right: 2rem;
+body main .consulting .container .consulting-description li span {
+  margin-right: 1rem;
   color: #d82020;
   font-family: 'Muller Medium';
 }
 
 body main .consulting .container .consulting-download {
-  padding-top: 3rem;
+  margin-top: 3rem;
 }
 
 body main .consulting .container .consulting-download a {
