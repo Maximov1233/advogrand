@@ -1,4 +1,4 @@
-const reviewsTitles = document.querySelectorAll('.reviews-title');
+const reviewsTitles = document.querySelectorAll('.reviews .reviews-title');
 
 reviewsTitles.forEach((elem) => {
     
@@ -6,14 +6,13 @@ reviewsTitles.forEach((elem) => {
         for (let i = 0; i < reviewsTitles.length; i++) {
             reviewsTitles[i].classList.remove('li_focus');
         }
+
         if (!elem.classList.contains('li_focus')) {
             elem.classList.add('li_focus');
         }
         
     });
 });
-
-
 
 const reviews = document.querySelectorAll('.review'),
 row = document.querySelector('.reviews .row');

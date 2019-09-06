@@ -595,6 +595,20 @@ body main .rates .container .section-subtitle {
   font-family: 'Muller Bold';
 }
 
+body main .rates .container .rates-title {
+  border: 1px solid #f5f5f5;
+  font-family: 'Muller Bold';
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  padding: 0.6rem 0.5rem;
+  cursor: pointer;
+}
+
+body main .rates .container .rates-title:hover {
+  color: #e50000;
+}
+
 body main .rates .container .rates-choosing {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -609,27 +623,6 @@ body main .rates .container .rates-choosing {
 
 body main .rates .container .rates-choosing .rates-choose {
   font-size: 1.6rem;
-}
-
-body main .rates .container .rates-choosing .rates-choices {
-  font-family: 'Muller Bold';
-  font-size: 1.4rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-preferred-size: 21%;
-      flex-basis: 21%;
-  text-transform: uppercase;
-  border: 1px solid #f5f5f5;
-  letter-spacing: 0.7px;
-}
-
-body main .rates .container .rates-choosing .rates-choices .reviews-title {
-  margin: 0;
-  padding: 1rem 1rem;
 }
 
 body main .rates .container .cards {
@@ -667,25 +660,43 @@ body main .rates .container .cards .card img {
   margin-bottom: 2rem;
 }
 
-body main .rates .container .cards .card .uls {
+body main .rates .container .cards .card .card__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   font-size: 1.4rem;
-  min-height: 370px;
+  min-height: 400px;
 }
 
-body main .rates .container .cards .card .uls ul li {
-  padding: 1rem 0;
+body main .rates .container .cards .card .card__list ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 2px solid #f5f5f5;
   color: #000;
+  min-height: 70px;
 }
 
-body main .rates .container .cards .card .uls .ul-1 {
-  text-align: left;
+body main .rates .container .cards .card .card__list ul li strong {
+  font-family: 'Muller Bold';
 }
 
-body main .rates .container .cards .card .uls .ul-2 {
-  text-align: right;
+body main .rates .container .cards .card .card__list ul li:first-child {
+  border-top: 2px solid #f5f5f5;
+}
+
+body main .rates .container .cards .card .card__list ul svg {
+  width: 20px;
+  height: 20px;
+}
+
+body main .rates .container .cards .card .card__list .card__list-second li {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 body main .rates .container .cards .card .card-price {
@@ -701,7 +712,7 @@ body main .rates .container .cards .card .card-price strong {
 body main .rates .container .cards .card button {
   font-size: 1.8rem;
   min-height: 4.5rem;
-  width: 100%;
+  min-width: 100%;
   height: 0;
   font-family: 'Muller Bold';
 }
