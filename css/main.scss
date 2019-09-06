@@ -451,7 +451,7 @@ body {
                     img {
                         margin-bottom: 1rem;
                     }
-                    
+
                     a {
                         color: #313131;
                         font-family: 'Muller Light';
@@ -474,10 +474,7 @@ body {
                 }
 
                 .partner {
-                    display: flex;
                     position: relative;
-                    justify-content: center;
-                    align-items: center;
                     cursor: pointer;
 
                     &-description {
@@ -486,7 +483,7 @@ body {
                         align-items: center;
                         background-color: #26b83a;
                         min-height: 100%;
-                        width: 100%;
+                        min-width: 100%;
                         position: absolute;
                         top: 0;
                         left: 0;
