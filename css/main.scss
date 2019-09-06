@@ -67,7 +67,6 @@ body {
     .reviews-title {
         border: 1px solid #f5f5f5;
         font-family: 'Muller Bold';
-        margin-right: 2.6rem;
         font-size: 1.4rem;
         text-transform: uppercase;
         letter-spacing: 0.7px;
@@ -425,17 +424,17 @@ body {
 
             .container {
                 flex-direction: column;
-                text-align: center;
+                .section-title {
+                    font-family: 'Muller Bold';
+                }
 
                 .reviews-titles {
-                    margin: auto;
+                    padding: 0 10%;
                     margin-bottom: 2rem;
 
                     ul {
-
                         display: flex;
-
-
+                        justify-content: space-around;
                     }
                 }
 
@@ -444,16 +443,15 @@ body {
                 }
 
                 .review {
-                    img {
-                        margin-bottom: 1rem;
-                    }
-
                     margin: 1rem;
                     display: flex;
                     flex-direction: column;
                     justify-content: center;
                     align-items: center;
-
+                    img {
+                        margin-bottom: 1rem;
+                    }
+                    
                     a {
                         color: #313131;
                         font-family: 'Muller Light';

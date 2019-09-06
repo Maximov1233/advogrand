@@ -69,7 +69,6 @@ body .button {
 body .reviews-title {
   border: 1px solid #f5f5f5;
   font-family: 'Muller Bold';
-  margin-right: 2.6rem;
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.7px;
@@ -464,11 +463,14 @@ body main .reviews .container {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  text-align: center;
+}
+
+body main .reviews .container .section-title {
+  font-family: 'Muller Bold';
 }
 
 body main .reviews .container .reviews-titles {
-  margin: auto;
+  padding: 0 10%;
   margin-bottom: 2rem;
 }
 
@@ -476,6 +478,8 @@ body main .reviews .container .reviews-titles ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 body main .reviews .container .row {
