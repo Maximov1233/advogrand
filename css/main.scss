@@ -1,5 +1,21 @@
 @import url(./fonts.css);
 
+// colors
+$white: #fff;
+$black: #000;
+$light-black: #1c1c1c;
+$light-grey: #313131;
+$button-bg: #c91111;
+$section-bg: #f5f5f5;
+$advogrand-bg: #26b83a;
+$footer-bg: #0e0e0e;
+$header-color: #e8e8e8;
+$span-color: #d82020;
+$input-color: #dddddd;
+$download-color: #e42626;
+$hover-text: #e50000;
+$consulting-button: #012e81;
+
 * {
     margin: 0;
     padding: 0;
@@ -15,7 +31,7 @@ body {
 
     a {
         text-decoration: none;
-        color: #1c1c1c;
+        color: $light-black;
     }
 
     ul {
@@ -24,12 +40,6 @@ body {
 
     section {
         padding: 2rem 0;
-    }
-
-    .li_focus {
-        border-radius: 5px;
-        color: #e50000;
-        border: 2px solid #e42626 !important;
     }
 
     .header-phone {
@@ -55,8 +65,8 @@ body {
     .button {
         min-width: 14rem;
         min-height: 3rem;
-        background-color: #c91111;
-        color: #fff;
+        background-color: $button-bg;
+        color: $white;
         border: none;
         border-radius: 5px;
         font-weight: 700;
@@ -65,7 +75,7 @@ body {
     }
 
     .reviews-title {
-        border: 1px solid #f5f5f5;
+        border: 1px solid $section-bg;
         font-family: 'Muller Bold';
         font-size: 1.4rem;
         text-transform: uppercase;
@@ -74,14 +84,14 @@ body {
         cursor: pointer;
 
         &:hover {
-            color: #e50000;
+            color: $hover-text;
         }
     }
 
     .header {
         padding: 1rem 0;
-        border-bottom: 1px solid #e8e8e8;
-        color: #1c1c1c;
+        border-bottom: 1px solid $header-color;
+        color: $light-black;
 
         .container {
             align-items: center;
@@ -101,7 +111,7 @@ body {
 
     main {
         .second-header {
-            color: #1c1c1c;
+            color: $light-black;
             padding: 1rem 0;
 
             .container {
@@ -121,7 +131,7 @@ body {
                     min-width: 9rem;
 
                     &__link {
-                        border: 1px solid #e42626;
+                        border: 1px solid $download-color;
                         border-radius: 5px;
                         padding: 7px;
 
@@ -136,7 +146,7 @@ body {
         }
 
         .jurist {
-            background: #1c1c1c url(../img/jurist_BG.png) no-repeat;
+            background: $light-black url(../img/jurist/bg.png) no-repeat;
             padding: 10rem 0 12rem;
 
             .container {
@@ -146,7 +156,7 @@ body {
             }
 
             &-text {
-                color: #fff;
+                color: $white;
                 max-width: 51rem;
                 margin-bottom: 3rem;
                 text-align: left;
@@ -183,7 +193,7 @@ body {
 
         .features {
             padding: 7rem 0;
-            color: #1c1c1c;
+            color: $light-black;
 
             .container {
 
@@ -205,8 +215,8 @@ body {
         }
 
         .about {
-            background: #1c1c1c url(../img/bg.png) no-repeat top;
-            color: #fff;
+            background: $light-black url(../img/about/bg.png) no-repeat top;
+            color: $white;
             padding: 7rem 0;
 
             .container {
@@ -249,8 +259,8 @@ body {
 
         .description {
             padding: 10rem 0;
-            color: #1c1c1c;
-            background-color: #f5f5f5;
+            color: $light-black;
+            background-color: $section-bg;
 
             .container {
                 flex-direction: column;
@@ -272,7 +282,7 @@ body {
         }
 
         .advantages {
-            color: #1c1c1c;
+            color: $light-black;
             padding: 10rem 0 8rem;
 
             .container {
@@ -310,8 +320,8 @@ body {
                         }
 
                         &__advogrand {
-                            background-color: #26b83a;
-                            color: #fff;
+                            background-color: $advogrand-bg;
+                            color: $white;
                             padding: 3rem 5rem;
 
                             li {
@@ -323,7 +333,7 @@ body {
                         }
 
                         &__others {
-                            border: 1px solid #e8e8e8;
+                            border: 1px solid $header-color;
                             padding: 3rem 5rem;
 
                             li {
@@ -374,8 +384,8 @@ body {
         }
 
         .consulting {
-            background: url(../img/consulting_bg.jpg) no-repeat top;
-            color: #fff;
+            background: url(../img/consulting/bg.jpg) no-repeat top;
+            color: $white;
 
             font-family: 'Muller Regular';
             padding: 7rem 0 5rem;
@@ -404,7 +414,7 @@ body {
 
                         span {
                             margin-right: 1rem;
-                            color: #d82020;
+                            color: $span-color;
                             font-family: 'Muller Medium';
                         }
                     }
@@ -423,9 +433,9 @@ body {
         }
 
         .reviews {
-            color: #313131;
+            color: $light-grey;
             font-family: 'Muller Regular';
-            background-color: #f5f5f5;
+            background-color: $section-bg;
             padding: 4rem 0;
 
             .change-opacity {
@@ -437,6 +447,12 @@ body {
 
                 .section-title {
                     font-family: 'Muller Bold';
+                }
+
+                .li_focus {
+                    border-radius: 5px;
+                    color: $hover-text;
+                    border: 2px solid $download-color;
                 }
 
                 .reviews-titles {
@@ -465,7 +481,7 @@ body {
                     }
 
                     a {
-                        color: #313131;
+                        color: $light-grey;
                         font-family: 'Muller Light';
                         font-size: 1.8rem;
                     }
@@ -475,7 +491,7 @@ body {
 
         .partners {
             padding: 5rem 0;
-            color: #313131;
+            color: $light-grey;
             font-family: 'Muller Regular';
 
             .container {
@@ -493,7 +509,7 @@ body {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background-color: #26b83a;
+                        background-color: $advogrand-bg;
                         min-height: 100%;
                         min-width: 100%;
                         position: absolute;
@@ -509,7 +525,7 @@ body {
 
                         p {
                             font-family: 'Muller Light';
-                            color: #fff;
+                            color: $white;
                             font-size: 1.2rem;
                             padding: 1rem 0.5rem;
                         }
@@ -519,8 +535,8 @@ body {
         }
 
         .rates {
-            background-color: #f5f5f5;
-            color: #313131;
+            background-color: $section-bg;
+            color: $light-grey;
             font-family: "Muller Regular";
             padding: 5rem 0;
 
@@ -539,7 +555,7 @@ body {
                 }
 
                 .rates-title {
-                    border: 1px solid #f5f5f5;
+                    border: 1px solid $section-bg;
                     font-family: 'Muller Bold';
                     font-size: 1.4rem;
                     text-transform: uppercase;
@@ -548,7 +564,7 @@ body {
                     cursor: pointer;
 
                     &:hover {
-                        color: #e50000;
+                        color: $hover-text;
                     }
 
                 }
@@ -569,14 +585,14 @@ body {
                     justify-content: space-between;
 
                     .card {
-                        border: 1px solid #e8e8e8;
-                        background-color: #ffffff;
+                        border: 1px solid $header-color;
+                        background-color: $white;
                         min-height: 50rem;
                         padding: 2rem 4rem;
                         text-align: center;
 
                         &-title {
-                            color: #000;
+                            color: $black;
                             text-align: center;
                             font-size: 2rem;
                             margin-bottom: 2rem;
@@ -596,20 +612,22 @@ body {
                             display: flex;
                             font-size: 1.4rem;
                             min-height: 400px;
+
                             ul {
 
                                 li {
                                     display: flex;
                                     align-items: center;
-                                    border-bottom: 2px solid #f5f5f5;
-                                    color: #000;
+                                    border-bottom: 2px solid $section-bg;
+                                    color: $black;
                                     min-height: 70px;
+
                                     strong {
                                         font-family: 'Muller Bold';
                                     }
 
                                     &:first-child {
-                                        border-top: 2px solid #f5f5f5;
+                                        border-top: 2px solid $section-bg;
                                     }
                                 }
 
@@ -649,7 +667,7 @@ body {
                             margin-bottom: 2rem;
 
                             button {
-                                background: #012e81;
+                                background: $consulting-button;
                             }
                         }
                     }
@@ -660,13 +678,14 @@ body {
         .contacts {
             padding: 7rem 0;
             font-family: 'Muller Regular';
+
             .container {
                 display: flex;
                 justify-content: space-between;
                 text-align: left;
-                
+
                 .contacts-form {
-                    
+
                     .section-title {
                         font-family: 'Muller Bold';
                         font-size: 2rem;
@@ -687,7 +706,7 @@ body {
                             margin: 1.5rem 0;
                             padding: 1rem 0;
                             border-radius: 5px;
-                            border: 1px solid #dddddd;
+                            border: 1px solid $input-color;
 
                             &:last-child {
                                 padding: 1rem 0 4rem;
@@ -724,7 +743,7 @@ body {
                         display: block;
                         font-size: 1.7rem;
                         margin-bottom: 1rem;
-                        color: #000;
+                        color: $black;
                     }
 
                     .contacts-phone {
@@ -745,7 +764,7 @@ body {
     }
 
     .footer {
-        background-color: #0e0e0e;
+        background-color: $footer-bg;
         padding: 3rem 0;
 
         .container {
@@ -754,7 +773,7 @@ body {
             align-items: center;
 
             .developer {
-                color: #fff;
+                color: $white;
                 font-size: 1.5rem;
             }
         }

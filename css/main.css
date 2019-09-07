@@ -27,12 +27,6 @@ body section {
   padding: 2rem 0;
 }
 
-body .li_focus {
-  border-radius: 5px;
-  color: #e50000;
-  border: 2px solid #e42626 !important;
-}
-
 body .header-phone a {
   font-family: 'Proxima Nova Bd';
   font-size: 1.6rem;
@@ -147,7 +141,7 @@ body main .second-header .container .app-download__link svg {
 }
 
 body main .jurist {
-  background: #1c1c1c url(../img/jurist_BG.png) no-repeat;
+  background: #1c1c1c url(../img/jurist/bg.png) no-repeat;
   padding: 10rem 0 12rem;
 }
 
@@ -229,7 +223,7 @@ body main .features .container .feature p {
 }
 
 body main .about {
-  background: #1c1c1c url(../img/bg.png) no-repeat top;
+  background: #1c1c1c url(../img/about/bg.png) no-repeat top;
   color: #fff;
   padding: 7rem 0;
 }
@@ -404,7 +398,7 @@ body main .advantages .container .advantages-description .statistics-button butt
 }
 
 body main .consulting {
-  background: url(../img/consulting_bg.jpg) no-repeat top;
+  background: url(../img/consulting/bg.jpg) no-repeat top;
   color: #fff;
   font-family: 'Muller Regular';
   padding: 7rem 0 5rem;
@@ -467,6 +461,12 @@ body main .reviews .container {
 
 body main .reviews .container .section-title {
   font-family: 'Muller Bold';
+}
+
+body main .reviews .container .li_focus {
+  border-radius: 5px;
+  color: #e50000;
+  border: 2px solid #e42626;
 }
 
 body main .reviews .container .reviews-titles {
@@ -637,7 +637,7 @@ body main .rates .container .cards {
 
 body main .rates .container .cards .card {
   border: 1px solid #e8e8e8;
-  background-color: #ffffff;
+  background-color: #fff;
   min-height: 50rem;
   padding: 2rem 4rem;
   text-align: center;
