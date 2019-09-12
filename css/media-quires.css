@@ -60,6 +60,24 @@
   }
 }
 
+@media (max-width: 769px) {
+  body main .about .container .section-achievements .achievement {
+    min-width: 180px;
+    margin-right: 1rem;
+  }
+  body main .reviews .container .reviews-titles ul .reviews-title {
+    font-size: 1.2rem;
+    padding: 0.5rem 1rem;
+  }
+  body main .contacts {
+    padding: 7rem 0;
+    font-family: 'Muller Regular';
+  }
+  body main .contacts .container .contacts-form {
+    min-width: 55%;
+  }
+}
+
 @media (max-width: 1800px) {
   body main .rates {
     padding: 3rem 0;
@@ -94,18 +112,6 @@
 @media (max-width: 998px) {
   body .header .container .header-phone a {
     font-size: 1.3rem;
-  }
-  body main .reviews .container .reviews-titles {
-    padding: 0;
-  }
-  body main .reviews .container .reviews-titles ul .reviews-title {
-    font-size: 1rem;
-    padding: 0.5rem;
-  }
-  body main .reviews .container .reviews-list {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
   }
 }
 

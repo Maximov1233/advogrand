@@ -292,7 +292,7 @@ body main .features .container .feature p {
 }
 
 body main .about {
-  background: #1c1c1c url(../img/about/bg.png) no-repeat top;
+  background: #1c1c1c url(../img/about/bg.png) no-repeat center top;
   color: #fff;
   padding: 7rem 0;
 }
@@ -322,8 +322,12 @@ body main .about .container .section-achievements {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main .about .container .section-achievements .achievement {
@@ -471,7 +475,7 @@ body main .advantages .container .advantages-description .statistics-button butt
 }
 
 body main .consulting {
-  background: url(../img/consulting/bg.jpg) no-repeat top;
+  background: url(../img/consulting/bg.jpg) no-repeat center top;
   color: #fff;
   font-family: 'Muller Regular';
   padding: 7rem 0 5rem;

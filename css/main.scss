@@ -47,7 +47,6 @@ body {
         a {
             font-family: 'Proxima Nova Bd';
             font-size: 1.6rem;
-
         }
     }
 
@@ -274,7 +273,7 @@ body {
         }
 
         .about {
-            background: $light-black url(../img/about/bg.png) no-repeat top;
+            background: $light-black url(../img/about/bg.png) no-repeat center top;
             color: $white;
             padding: 7rem 0;
 
@@ -297,8 +296,8 @@ body {
 
                 .section-achievements {
                     display: flex;
-                    justify-content: space-around;
-
+                    justify-content: center;
+                    align-items: center;
                     .achievement {
                         margin-right: 8rem;
                         min-width: 18rem;
@@ -443,7 +442,7 @@ body {
         }
 
         .consulting {
-            background: url(../img/consulting/bg.jpg) no-repeat top;
+            background: url(../img/consulting/bg.jpg) no-repeat center top;
             color: $white;
 
             font-family: 'Muller Regular';

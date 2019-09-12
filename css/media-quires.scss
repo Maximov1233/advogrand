@@ -77,8 +77,6 @@ $consulting-button: #012e81;
                             justify-content: center;
                             align-items: center;
                             flex-direction: column;
-                            
- 
                             .statistics-list {
                                 min-height: 0;
                                 display: block;
@@ -91,7 +89,43 @@ $consulting-button: #012e81;
     }
 }
 
-
+@media (max-width: 769px) {
+    body {
+        main {
+            .about {
+                .container {
+                    .section-achievements {
+                        .achievement {
+                            min-width: 180px;
+                            margin-right: 1rem;
+                        }
+                    }
+                }
+            }
+            .reviews {
+                .container {
+                    .reviews-titles {
+                        ul {
+                            .reviews-title {
+                                font-size: 1.2rem;
+                                padding: 0.5rem 1rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .contacts {
+                padding: 7rem 0;
+                font-family: 'Muller Regular';
+                .container {
+                    .contacts-form {
+                        min-width: 55%;
+                    }
+                }
+            }
+        }
+    }
+}
 
 
 
@@ -176,28 +210,6 @@ $consulting-button: #012e81;
                 .header-phone {
                     a {
                         font-size: 1.3rem;
-                    }
-                }
-            }
-        }
-
-        main {
-            .reviews {
-                .container {
-                    .reviews-titles {
-                        padding: 0;
-
-                        ul {
-                            .reviews-title {
-                                font-size: 1rem;
-                                padding: 0.5rem;
-                            }
-                        }
-
-                    }
-
-                    .reviews-list {
-                        justify-content: center;
                     }
                 }
             }
