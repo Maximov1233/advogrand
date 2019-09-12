@@ -15,11 +15,11 @@ reviewsTitles.forEach((elem) => {
 });
 
 const reviews = document.querySelectorAll('.review'),
-row = document.querySelector('.reviews .row');
+reviewsList = document.querySelector('.reviews .row');
 
 reviewsTitles.forEach((elem) => {
     elem.addEventListener('click', () => {
-        row.classList.toggle('change-opacity');
+        reviewsList.classList.toggle('change-opacity');
         setTimeout(() => {
             reviews.forEach((review) => {
                 review.parentNode.style.display = 'none';
@@ -30,11 +30,27 @@ reviewsTitles.forEach((elem) => {
                         review.parentNode.style.display = '';
                     }
             });
-            row.style.opaciity = '1';
-            row.classList.toggle('change-opacity');
+            reviewsList.classList.toggle('change-opacity');
         }, 600);
         
     });
+});
+
+const hamburger = document.querySelector('.second-header__hamburger'),
+header = document.querySelector('.header');
+
+
+
+hamburger.addEventListener('click', () => {
+    
+    if (!hamburger.classList.contains('open')) {
+        header.style.top = '0';
+        hamburger.classList.toggle('open');
+    }
+    else {
+        header.style.top = '-100%';
+        hamburger.classList.toggle('open');
+    }
     
 });
 

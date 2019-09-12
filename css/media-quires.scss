@@ -1,19 +1,88 @@
-@media (max-width: 1552px) {
+$white: #fff;
+$black: #000;
+$light-black: #1c1c1c;
+$light-grey: #313131;
+$button-bg: #c91111;
+$section-bg: #f5f5f5;
+$advogrand-bg: #26b83a;
+$footer-bg: #0e0e0e;
+$header-color: #e8e8e8;
+$span-color: #d82020;
+$input-color: #dddddd;
+$download-color: #e42626;
+$hover-text: #e50000;
+$consulting-button: #012e81;
+
+
+@media (max-width: 1441px) {
     body {
-        header {
-            padding: 0 3%;
+        main {
+            .about {
+                .container {
+                    .section-achievements {
+                        .achievement {
+                            margin-right: 3rem;
+                            span {
+                                font-size: 1.4rem;
+                                strong {
+                                    font-size: 3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
         }
+
     }
 }
 
-@media (max-width: 1506px) {
+@media(max-width: 1025px) {
     body {
-        header {
-            .header-nav {
-                nav {
-                    ul {
+        main {
+            .about {
+                .container {
+                    .section-title {
+                        margin-bottom: 3rem;
+                    }
+                    .section-description {
+                        max-width: unset;
+                    }
+                }
+            }
+            .description {
+                padding: 5rem 0;
+            }
+            .advantages {
+                .container {
+                    flex-direction: column;
+                    text-align: unset;
+    
+                    .section-title {
+                        text-align: center;
+                    }
+    
+                    .advantages-description {
+                        display: block;
+                        margin: auto;
+    
                         li {
-                            margin-right: 2rem;
+                            font-size: 1.3rem;
+                            margin-bottom: 3rem;
+                        }
+    
+                        .statistics-description {
+                            padding: 2rem 0;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            flex-direction: column;
+                            
+ 
+                            .statistics-list {
+                                min-height: 0;
+                                display: block;
+                            }
                         }
                     }
                 }
@@ -22,112 +91,173 @@
     }
 }
 
-@media (max-width: 1377px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 1800px) {
     body {
-        header {
-            .header-logo {
-                img {
-                    max-width: 90%;
+        main {
+            .rates {
+                padding: 3rem 0;
+                .container {
+                    .cards {
+                        display: block;
+                        .card {
+                            margin: auto;
+                            max-width: 40rem;
+                            padding: 2rem 1rem;
+                            margin-bottom: 2rem;
+                        }
+                    }
+
                 }
             }
+        }
+    }
+}
 
-            .header-nav {
-                nav {
-                    ul {
-                        li {
-                            margin-right: 1rem;
+@media (max-width: 1310px) {
+    body {
+        .header {
+            .container {
+                ul {
+                    .nav__item {
+                        margin-right: 1.7rem;
+                    }
+                }
+
+            }
+        }
+
+        main {
+            .second-header {
+                .container {
+                    .second-header__slogan {
+                        flex-basis: 35%;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1048px) {
+    body {
+        .header {
+            .container {
+                ul {
+                    .nav__item {
+                        margin-right: 1rem;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 998px) {
+    body {
+        .header {
+            .container {
+                .header-phone {
+                    a {
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+
+        main {
+            .reviews {
+                .container {
+                    .reviews-titles {
+                        padding: 0;
+
+                        ul {
+                            .reviews-title {
+                                font-size: 1rem;
+                                padding: 0.5rem;
+                            }
+                        }
+
+                    }
+
+                    .reviews-list {
+                        justify-content: center;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 935px) {
+    body {
+        .header {
+            padding: 3rem 0;
+            background: $light-black;
+            position: fixed;
+            top: -100%;
+            left: 0;
+            right: 0;
+            border-bottom: 0;
+
+
+            .container {
+                flex-direction: column;
+
+                .header-phone {
+                    display: block;
+                    margin-bottom: 1rem;
+
+                    a {
+                        color: $white;
+                        font-size: 1.5rem;
+                    }
+                }
+
+                ul {
+                    display: block;
+
+                    .nav__item {
+                        margin: 0 0 1.5rem 0;
+                        font-size: 1.7rem;
+
+                        .nav__link {
+                            color: $white;
                         }
                     }
                 }
+
+                .button {
+                    font-size: 2rem;
+                    padding: 0.5rem 1rem;
+                }
+
             }
         }
-    }
-}
 
-@media (max-width: 1277px) {
-    body {
-        header {
-            .header-logo {
-                img {
-                    max-width: 90%;
-                }
-            }
-
-            .header-nav {
-                nav {
-                    ul {
-                        li {
-                            margin-right: 1rem;
-                            font-size: 1.2rem;
-                        }
+        main {
+            .second-header {
+                .container {
+                    .second-header__hamburger {
+                        display: flex;
                     }
                 }
-            }
-        }
-    }
-}
-
-@media (max-width: 1209px) {
-    body {
-        header {
-            .header-logo {
-                img {
-                    max-width: 90%;
-                }
-            }
-
-            .header-phone {
-                h3 {
-                    font-size: 1.3rem;
-                }
-            }
-
-            .header-download {
-                width: 6rem;
-
-                .android-download {
-                    padding: 2px;
-
-                    svg {
-                        width: 2rem;
-                        height: 2rem;
-                    }
-                }
-
-                .ios-download {
-                    padding: 3px;
-
-                    svg {
-                        width: 2rem;
-                        height: 2rem;
-                    }
-                }
-            }
-
-            .header-button {
-                button {
-                    width: 11rem;
-                    height: 3rem;
-                    font-size: 1.1rem;
-
-                }
-            }
-        }
-    }
-}
-
-@media (max-width: 1111px) {
-    body {
-        header {
-            padding: 0 25%;
-            justify-content: space-around;
-
-            .header-nav {
-                display: none;
-            }
-
-            .header-download {
-                display: none;
             }
         }
     }
