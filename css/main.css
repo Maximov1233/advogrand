@@ -475,7 +475,7 @@ body main .advantages .container .advantages-description .statistics-button butt
 }
 
 body main .consulting {
-  background: url(../img/consulting/bg.jpg) no-repeat center top;
+  background: #1c1c1c url(../img/consulting/bg.jpg) no-repeat center top;
   color: #fff;
   font-family: 'Muller Regular';
   padding: 7rem 0 5rem;
@@ -732,6 +732,10 @@ body main .rates .container .cards .card .card__list {
   display: flex;
   font-size: 1.4rem;
   min-height: 400px;
+}
+
+body main .rates .container .cards .card .card__list-first {
+  text-align: left;
 }
 
 body main .rates .container .cards .card .card__list ul li {

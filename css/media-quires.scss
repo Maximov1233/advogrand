@@ -91,6 +91,13 @@ $consulting-button: #012e81;
 
 @media (max-width: 769px) {
     body {
+        .second-header {
+            .container {
+                .second-header__phone {
+                    display: none;
+                }
+            }
+        }
         main {
             .about {
                 .container {
@@ -121,10 +128,182 @@ $consulting-button: #012e81;
                     .contacts-form {
                         min-width: 55%;
                     }
+                    .contacts-list {
+                        .section-title {
+                            margin-bottom: 3rem;
+                        }
+                    }
                 }
             }
         }
     }
+}
+
+@media (max-width: 425px) {
+    body {
+        header {
+            text-align: center;
+        }
+        .second-header {
+            &__slogan {
+                display: none;
+            }
+        }
+        main {
+            .jurist {
+                padding: 3rem 0;
+                background: $light-black;
+               
+            }
+            .about {
+                padding: 4rem 0;
+                background: $light-black;
+                .container {
+                    .section-description {
+                        margin-bottom: 3rem;
+                    }
+                    .section-achievements {
+                        display: block;
+                        .achievement {
+                            margin-bottom: 2rem;
+                            span {
+                                font-size: 1.4rem;
+                                strong {
+                                    font-size: 3rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .advantages {
+                 .container {
+                    .advantages-description {
+                        .comparing {
+                            display: block;
+                        }
+                        .statistics-description {
+                            margin-left: 0;
+                        }
+                    }
+                 }   
+            }
+            .consulting {
+                background: $light-black;
+                padding: 4rem 0;
+                .container {
+                    text-align: center;
+                    display: block;
+                }
+            }
+            .reviews {
+                .container {
+                    .reviews-titles {
+                        ul {
+                            display: block;
+                        }
+                    }
+                }
+            }   
+            .contacts {
+                .container {
+                    display: block;
+                    .contacts-form {
+                        .section-title {
+                            font-size: 1.7rem;
+                        }
+                        .form {
+                            width: 100%;
+                        }
+                    }
+                    .contacts-list {
+                        text-align: center;
+                        .section-title {
+                            font-size: 2rem;
+                        }
+                        a {
+                            font-size: 1.2rem;
+                        }
+                        p {
+                            max-width: 100%;
+                        }
+                    }
+                }
+            }
+        }
+        footer {
+            .container {
+                .developer {
+                    padding: 0 19px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    body {
+        main {
+            .jurist {
+                .container {
+                    .jurist-text {
+                        text-align: center;
+                        h2 {
+                            font-size: 2rem;
+                            span {
+                                font-size: 2.5rem;
+                            }
+                        }
+                        p {
+                            font-size: 2rem;
+                        }
+                    }
+                }
+                .button {
+                    min-width: 25rem;
+                } 
+            }
+        }
+    }
+}
+
+@media (max-width: 320px) {
+    body {
+        main {
+            .second-header {
+                .container {
+                    .app-download {
+                        display: none;
+                    }
+                }
+            }
+            .jurist {
+                .container {
+                    .button {
+                        min-width: 22rem;
+                    }
+                }
+            }
+            .advantages {
+                display: none;
+            }
+            .contacts {
+                padding: 2rem 0;
+                .container {
+                    .contacts-list {
+                        .section-title {
+                            margin-bottom: 1rem;
+                        }
+                    }
+                }
+            }   
+        }
+        .footer {
+            .container {
+                display: block;
+            }
+        }
+    }    
 }
 
 

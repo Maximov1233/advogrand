@@ -442,7 +442,7 @@ body {
         }
 
         .consulting {
-            background: url(../img/consulting/bg.jpg) no-repeat center top;
+            background: $light-black url(../img/consulting/bg.jpg) no-repeat center top;
             color: $white;
 
             font-family: 'Muller Regular';
@@ -668,7 +668,9 @@ body {
                             display: flex;
                             font-size: 1.4rem;
                             min-height: 400px;
-
+                            &-first {
+                                text-align: left;
+                            }
                             ul {
 
                                 li {
@@ -677,7 +679,7 @@ body {
                                     border-bottom: 2px solid $section-bg;
                                     color: $black;
                                     min-height: 70px;
-
+                                    
                                     strong {
                                         font-family: 'Muller Bold';
                                     }
