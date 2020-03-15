@@ -8,7 +8,7 @@
 }
 
 html {
-  font-size: 12px;
+  font-size: 14px;
 }
 
 body {
@@ -30,34 +30,30 @@ body section {
 
 body .header-phone a {
   font-family: 'Proxima Nova Bd';
-  font-size: 1.6rem;
+  font-size: 18px;
+  margin-right: 30px;
 }
 
 body .section-title {
-  font-size: 2.4rem;
-  margin-bottom: 3rem;
+  font-size: 24px;
+  margin-bottom: 30px;
+  text-align: center;
   font-family: 'Proxima Nova Bd';
 }
 
 body .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  text-align: center;
+  max-width: 960px;
+  margin: auto;
 }
 
 body .button {
-  min-width: 14rem;
-  min-height: 3rem;
+  padding: 10px 8px;
   background-color: #c91111;
   color: #fff;
   border: none;
   border-radius: 5px;
   font-weight: 700;
-  font-size: 1.3rem;
+  font-size: 16px;
   cursor: pointer;
   font-family: 'Proxima Nova Bd';
 }
@@ -65,10 +61,9 @@ body .button {
 body .reviews-title {
   border: 1px solid #f5f5f5;
   font-family: 'Muller Bold';
-  font-size: 1.4rem;
+  font-size: 18px;
   text-transform: uppercase;
-  letter-spacing: 0.7px;
-  padding: 1rem 2.5rem;
+  padding: 10px 25px;
   cursor: pointer;
 }
 
@@ -89,6 +84,12 @@ body .header {
 }
 
 body .header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -104,8 +105,8 @@ body .header .container ul {
 }
 
 body .header .container ul .nav__item {
-  margin-right: 3.4rem;
-  font-size: 1.4rem;
+  margin-right: 18px;
+  font-size: 16px;
 }
 
 body main .second-header {
@@ -114,18 +115,23 @@ body main .second-header {
 }
 
 body main .second-header .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
 }
 
-body main .second-header .container .second-header__slogan {
-  -ms-flex-preferred-size: 60%;
-      flex-basis: 60%;
+body main .second-header .container .logo {
+  margin-right: 30px;
 }
 
 body main .second-header .container .second-header__slogan p {
-  font-size: 1.4rem;
+  font-size: 17px;
 }
 
 body main .second-header .container .app-download {
@@ -134,18 +140,18 @@ body main .second-header .container .app-download {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  min-width: 9rem;
+  min-width: 140px;
 }
 
 body main .second-header .container .app-download__link {
   border: 1px solid #e42626;
-  border-radius: 5px;
-  padding: 7px;
+  border-radius: 7px;
+  padding: 6px;
 }
 
 body main .second-header .container .app-download__link svg {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 
 body main .second-header .container .second-header__hamburger {
@@ -211,41 +217,38 @@ body main .second-header .container .second-header__hamburger span:nth-child(4) 
 
 body main .jurist {
   background: #1c1c1c url(../img/jurist/bg.png) no-repeat center top;
-  padding: 10rem 0 12rem;
+  padding: 9rem;
 }
 
 body main .jurist .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding-left: 10%;
 }
 
 body main .jurist-text {
   color: #fff;
-  max-width: 51rem;
-  margin-bottom: 3rem;
-  text-align: left;
+  margin-bottom: 30px;
 }
 
 body main .jurist-text h2 {
   font-family: 'Proxima Nova Bd';
-  font-size: 3.2rem;
+  font-size: 32px;
   font-weight: 700;
 }
 
 body main .jurist-text h2 span {
-  font-size: 4rem;
+  font-size: 40px;
   text-transform: uppercase;
   font-family: 'Proxima Nova Extra Bold';
 }
 
 body main .jurist-text p {
-  font-size: 2.4rem;
+  font-size: 32px;
   font-family: 'Proxima Nova Lt';
 }
 
@@ -254,22 +257,15 @@ body main .jurist-text p span {
 }
 
 body main .jurist button {
-  min-width: 30rem;
-  min-height: 6rem;
-  font-size: 1.8rem;
+  padding: 18px 28px;
+  font-size: 22px;
+  border-radius: 7px;
   font-family: 'Proxima Nova Rg';
 }
 
 body main .features {
   padding: 7rem 0;
   color: #1c1c1c;
-}
-
-body main .features .container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 body main .features .container .feature {
@@ -282,43 +278,71 @@ body main .features .container .feature {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin: 3rem;
+  margin: 30px;
 }
 
 body main .features .container .feature p {
-  font-size: 1.6rem;
-  margin-left: 2rem;
-  width: 22rem;
+  font-size: 18px;
+  margin-left: 20px;
 }
 
 body main .about {
   background: #1c1c1c url(../img/about/bg.png) no-repeat center top;
   color: #fff;
-  padding: 7rem 0;
-}
-
-body main .about .container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  padding: 5rem 0;
 }
 
 body main .about .container .section-title {
-  margin-bottom: 5rem;
+  margin-bottom: 50px;
 }
 
 body main .about .container .section-description {
-  max-width: 80%;
-  margin: auto;
-  margin-bottom: 6rem;
+  margin-bottom: 60px;
 }
 
 body main .about .container .section-description p {
-  font-size: 1.6rem;
+  font-size: 20px;
+  text-align: center;
 }
 
 body main .about .container .section-achievements {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .about .container .section-achievements .achievement {
+  text-align: center;
+  margin-right: 80px;
+  min-width: 180px;
+}
+
+body main .about .container .section-achievements .achievement span {
+  font-size: 18px;
+}
+
+body main .about .container .section-achievements .achievement span strong {
+  font-family: 'Proxima Nova Bd';
+  font-size: 40px;
+}
+
+body main .description {
+  padding: 5rem 0;
+  color: #1c1c1c;
+  background-color: #f5f5f5;
+}
+
+body main .description .container .section-title {
+  margin-bottom: 40px;
+}
+
+body main .description .container .descriptions-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -330,49 +354,24 @@ body main .about .container .section-achievements {
           align-items: center;
 }
 
-body main .about .container .section-achievements .achievement {
-  margin-right: 8rem;
-  min-width: 18rem;
+body main .description .container .descriptions-list .description__item {
+  padding: 10px 70px;
 }
 
-body main .about .container .section-achievements .achievement span {
-  font-size: 1.6rem;
+body main .description .container .descriptions-list .description__item .description__image img {
+  display: block;
+  margin: auto;
 }
 
-body main .about .container .section-achievements .achievement span strong {
-  font-family: 'Proxima Nova Bd';
-  font-size: 4.5rem;
-}
-
-body main .description {
-  padding: 10rem 0;
-  color: #1c1c1c;
-  background-color: #f5f5f5;
-}
-
-body main .description .container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body main .description .container .section-title {
-  margin-bottom: 4rem;
-}
-
-body main .description .container .description__item {
-  padding: 1rem 7rem;
-}
-
-body main .description .container .description__item .description__text {
-  margin-top: 0.3rem;
-  font-size: 1.6rem;
+body main .description .container .descriptions-list .description__item .description__text {
+  text-align: center;
+  margin-top: 3px;
+  font-size: 18px;
 }
 
 body main .advantages {
   color: #1c1c1c;
-  padding: 10rem 0 8rem;
+  padding: 5rem;
 }
 
 body main .advantages .container {
@@ -391,14 +390,14 @@ body main .advantages .container .advantages-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 body main .advantages .container .advantages-description li {
-  font-size: 1.3rem;
-  margin-bottom: 3rem;
+  font-size: 16px;
+  margin-bottom: 30px;
 }
 
 body main .advantages .container .advantages-description .comparing {
@@ -410,7 +409,7 @@ body main .advantages .container .advantages-description .comparing {
 
 body main .advantages .container .advantages-description .comparing .advantages__list {
   text-align: right;
-  padding: 3rem 1rem;
+  padding: 10px;
 }
 
 body main .advantages .container .advantages-description .comparing .advantages__list li:first-child {
@@ -420,35 +419,16 @@ body main .advantages .container .advantages-description .comparing .advantages_
 body main .advantages .container .advantages-description .comparing__advogrand {
   background-color: #26b83a;
   color: #fff;
-  padding: 3rem 5rem;
-}
-
-body main .advantages .container .advantages-description .comparing__advogrand li:first-child {
-  font-size: 1.5rem;
-  font-family: 'Proxima Nova Bd';
+  padding: 10px 10px;
 }
 
 body main .advantages .container .advantages-description .comparing__others {
   border: 1px solid #e8e8e8;
-  padding: 3rem 5rem;
-}
-
-body main .advantages .container .advantages-description .comparing__others li:first-child {
-  font-size: 1.5rem;
-  font-family: 'Proxima Nova Bd';
-}
-
-body main .advantages .container .advantages-description .statistics-description {
-  margin-left: 2rem;
+  padding: 10px 10px;
 }
 
 body main .advantages .container .advantages-description .statistics-description .section-title {
-  text-align: left;
-  font-size: 1.6rem;
-}
-
-body main .advantages .container .advantages-description .statistics-description .statistics-list {
-  min-height: 27rem;
+  font-size: 16px;
 }
 
 body main .advantages .container .advantages-description .statistics-description .statistics-list li {
@@ -458,44 +438,51 @@ body main .advantages .container .advantages-description .statistics-description
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-size: 1.6rem;
-  padding-bottom: 1rem;
+  font-size: 16px;
+  padding-bottom: 10px;
 }
 
 body main .advantages .container .advantages-description .statistics-description .statistics-list li strong {
   font-family: 'Proxima Nova Bd';
-  margin-left: 2rem;
-  margin-right: 0.5rem;
+  margin-left: 20px;
+  margin-right: 5px;
 }
 
 body main .advantages .container .advantages-description .statistics-button button {
-  font-size: 1.6rem;
-  min-width: 27rem;
-  min-height: 5rem;
+  font-size: 16px;
+  padding: 15px 50px;
+}
+
+body main .advantages .container .advantages-description .font-weight__bold {
+  font-size: 16px;
+  font-family: 'Proxima Nova Bd';
 }
 
 body main .consulting {
   background: #1c1c1c url(../img/consulting/bg.jpg) no-repeat center top;
   color: #fff;
   font-family: 'Muller Regular';
-  padding: 7rem 0 5rem;
+  padding: 5rem;
 }
 
 body main .consulting .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  text-align: left;
 }
 
 body main .consulting .container .section-title {
+  text-align: left;
   font-family: 'Muller Bold';
+  margin-bottom: 60px;
 }
 
 body main .consulting .container .consulting-description li {
-  font-size: 1.8rem;
+  font-size: 20px;
   font-family: 'Muller Light';
-  letter-spacing: 1.2px;
-  padding: 1rem 0;
+  padding: 10px 0;
 }
 
 body main .consulting .container .consulting-description li a {
@@ -504,18 +491,28 @@ body main .consulting .container .consulting-description li a {
 }
 
 body main .consulting .container .consulting-description li span {
-  margin-right: 1rem;
+  margin-right: 10px;
   color: #d82020;
   font-family: 'Muller Medium';
 }
 
 body main .consulting .container .consulting-download {
-  margin-top: 3rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main .consulting .container .consulting-download a {
   display: block;
-  margin-bottom: 3rem;
 }
 
 body main .reviews {
@@ -548,7 +545,7 @@ body main .reviews .container .li_focus {
 
 body main .reviews .container .reviews-titles {
   padding: 0 10%;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 body main .reviews .container .reviews-titles ul {
@@ -566,18 +563,18 @@ body main .reviews .container .row {
 
 body main .reviews .container .row .review {
   text-align: center;
-  padding: 2rem 0;
+  padding: 20px 0;
 }
 
 body main .reviews .container .row .review img {
   max-width: 100%;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 body main .reviews .container .row .review a {
   color: #313131;
   font-family: 'Muller Light';
-  font-size: 1.8rem;
+  font-size: 20px;
 }
 
 body main .partners {
@@ -586,23 +583,25 @@ body main .partners {
   font-family: 'Muller Regular';
 }
 
-body main .partners .container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
 body main .partners .container .section-title {
   font-family: 'Muller Bold';
 }
 
-body main .partners .container .partner {
+body main .partners .container .partners {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .partners .container .partners .partner {
   position: relative;
   cursor: pointer;
 }
 
-body main .partners .container .partner-description {
+body main .partners .container .partners .partner-description {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -625,15 +624,16 @@ body main .partners .container .partner-description {
   transition: all ease-out 0.4s;
 }
 
-body main .partners .container .partner-description:hover {
+body main .partners .container .partners .partner-description:hover {
   opacity: 1;
 }
 
-body main .partners .container .partner-description p {
+body main .partners .container .partners .partner-description p {
+  text-align: center;
   font-family: 'Muller Light';
   color: #fff;
-  font-size: 1.2rem;
-  padding: 1rem 0.5rem;
+  font-size: 14px;
+  padding: 10px 5px;
 }
 
 body main .rates {
@@ -656,23 +656,9 @@ body main .rates .container .section-title {
 }
 
 body main .rates .container .section-subtitle {
-  font-size: 1.6rem;
-  margin-bottom: 3rem;
+  font-size: 20px;
+  margin-bottom: 30px;
   font-family: 'Muller Bold';
-}
-
-body main .rates .container .rates-title {
-  border: 1px solid #f5f5f5;
-  font-family: 'Muller Bold';
-  font-size: 1.4rem;
-  text-transform: uppercase;
-  letter-spacing: 0.7px;
-  padding: 0.6rem 0.5rem;
-  cursor: pointer;
-}
-
-body main .rates .container .rates-title:hover {
-  color: #e50000;
 }
 
 body main .rates .container .rates-choosing {
@@ -688,7 +674,7 @@ body main .rates .container .rates-choosing {
 }
 
 body main .rates .container .rates-choosing .rates-choose {
-  font-size: 1.6rem;
+  font-size: 18px;
 }
 
 body main .rates .container .cards {
@@ -704,16 +690,16 @@ body main .rates .container .cards {
 body main .rates .container .cards .card {
   border: 1px solid #e8e8e8;
   background-color: #fff;
-  min-height: 50rem;
-  padding: 2rem 4rem;
+  min-height: 500px;
+  padding: 20px 25px;
   text-align: center;
 }
 
 body main .rates .container .cards .card-title {
   color: #000;
   text-align: center;
-  font-size: 2rem;
-  margin-bottom: 2rem;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 body main .rates .container .cards .card-title strong {
@@ -723,14 +709,14 @@ body main .rates .container .cards .card-title strong {
 body main .rates .container .cards .card img {
   display: block;
   margin: 0 auto;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 body main .rates .container .cards .card .card__list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  font-size: 1.4rem;
+  font-size: 16px;
   min-height: 400px;
 }
 
@@ -770,33 +756,35 @@ body main .rates .container .cards .card .card__list .card__list-second li {
 }
 
 body main .rates .container .cards .card .card-price {
-  margin: 2rem 0;
-  font-size: 1.7rem;
+  margin: 20px 0;
+  font-size: 17px;
 }
 
 body main .rates .container .cards .card .card-price strong {
   font-family: 'Muller Bold';
-  font-size: 2.4rem;
+  font-size: 24px;
 }
 
 body main .rates .container .cards .card button {
-  font-size: 1.8rem;
-  min-height: 4.5rem;
-  min-width: 100%;
-  height: 0;
+  font-size: 18px;
+  padding: 18px 40px;
   font-family: 'Muller Bold';
 }
 
 body main .rates .container .cards .card .card-consulting {
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
 }
 
 body main .rates .container .cards .card .card-consulting button {
   background: #012e81;
 }
 
+body main .rates .container .cards .card .card-purchase button {
+  padding: 18px 70px;
+}
+
 body main .contacts {
-  padding: 7rem 0;
+  padding: 5rem 0;
   font-family: 'Muller Regular';
 }
 
@@ -812,8 +800,9 @@ body main .contacts .container {
 
 body main .contacts .container .contacts-form .section-title {
   font-family: 'Muller Bold';
-  font-size: 2rem;
-  margin-bottom: 3rem;
+  font-size: 20px;
+  text-align: left;
+  margin-bottom: 30px;
 }
 
 body main .contacts .container .contacts-form .form {
@@ -831,47 +820,47 @@ body main .contacts .container .contacts-form .form {
 }
 
 body main .contacts .container .contacts-form .form label {
-  font-size: 1.4rem;
+  font-size: 16px;
 }
 
 body main .contacts .container .contacts-form .form__input {
-  margin: 1.5rem 0;
-  padding: 1rem 0;
+  margin: 15px 0;
+  padding: 10px 0;
   border-radius: 5px;
   border: 1px solid #dddddd;
 }
 
 body main .contacts .container .contacts-form .form__input:last-child {
-  padding: 1rem 0 4rem;
+  padding: 10px 0 40px;
 }
 
 body main .contacts .container .contacts-form .form__button {
   width: 100%;
-  margin-bottom: 2rem;
+  margin-bottom: 20px;
   font-family: 'Muller Bold';
-  font-size: 1.8rem;
-  min-height: 5rem;
+  font-size: 18px;
+  min-height: 50px;
 }
 
 body main .contacts .container .contacts-form .form p {
   text-align: center;
-  font-size: 1.3rem;
+  font-size: 15px;
 }
 
 body main .contacts .container .contacts-list .section-title {
-  font-size: 3rem;
-  margin-bottom: 7rem;
+  font-size: 30px;
+  margin-bottom: 70px;
 }
 
 body main .contacts .container .contacts-list .contacts-title {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
+  font-size: 15px;
+  margin-bottom: 10px;
 }
 
 body main .contacts .container .contacts-list a {
   display: block;
-  font-size: 1.7rem;
-  margin-bottom: 1rem;
+  font-size: 20px;
+  margin-bottom: 10px;
   color: #000;
 }
 
@@ -884,8 +873,7 @@ body main .contacts .container .contacts-list .contacts-email {
 }
 
 body main .contacts .container .contacts-list p {
-  font-size: 1.7rem;
-  max-width: 51%;
+  font-size: 17px;
 }
 
 body .footer {
@@ -907,6 +895,6 @@ body .footer .container {
 
 body .footer .container .developer {
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 17px;
 }
 /*# sourceMappingURL=main.css.map */

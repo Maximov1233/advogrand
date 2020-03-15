@@ -48,7 +48,7 @@ hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('open');
     }
     else {
-        header.style.top = '-100%';
+        header.style.top = '-2000px';
         hamburger.classList.toggle('open');
     }
     
