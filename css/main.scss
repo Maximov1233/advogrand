@@ -61,9 +61,6 @@ body {
     .container {
         max-width: 960px;
         margin: auto;
-        // display: flex;
-        // justify-content: space-between;
-        // text-align: center;
     }
 
     .button {
@@ -77,6 +74,7 @@ body {
         cursor: pointer;
         font-family: 'Proxima Nova Bd';
     }
+    
 
     .reviews-title {
         border: 1px solid $section-bg;
@@ -95,13 +93,19 @@ body {
         display: block;
     }
 
-    
+    .top-0 {
+        top: 0px;
+    }
+
+    .top-2000 {
+        top: -1500px;
+    }
 
     .header {
         padding: 1rem 0;
         border-bottom: 1px solid $header-color;
         color: $light-black;
-        transition: all ease 1s;
+        transition: all ease-in-out 1s;
 
         .container {
             display: flex;
@@ -145,7 +149,6 @@ body {
                 }
             }
         }
-
     }
 
     main {
@@ -233,7 +236,6 @@ body {
                             top: 18px;
                         }
                     }
-
                 }
             }
         }

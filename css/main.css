@@ -75,12 +75,20 @@ body .a {
   display: block;
 }
 
+body .top-0 {
+  top: 0px;
+}
+
+body .top-2000 {
+  top: -1500px;
+}
+
 body .header {
   padding: 1rem 0;
   border-bottom: 1px solid #e8e8e8;
   color: #1c1c1c;
-  -webkit-transition: all ease 1s;
-  transition: all ease 1s;
+  -webkit-transition: all ease-in-out 1s;
+  transition: all ease-in-out 1s;
 }
 
 body .header .container {

@@ -1,3 +1,33 @@
+const hamburger = document.querySelector('.second-header__hamburger'),
+header = document.querySelector('.header');
+
+let width = document.body.clientWidth;
+    if (width <= 1001) {
+        header.classList.add('top-2000');
+    }
+
+    window.addEventListener('resize', () => {
+        width = document.body.clientWidth;
+        if (width <= 1001) {
+            header.classList.add('top-2000');
+        }
+    });
+
+    hamburger.addEventListener('click', () => {
+    
+        if (!hamburger.classList.contains('open')) {
+            header.classList.remove('top-2000');
+            header.classList.add('top-0');
+            hamburger.classList.toggle('open');
+        }
+        else {
+            header.classList.remove('top-0');
+            header.classList.add('top-2000');
+            hamburger.classList.toggle('open');
+        }
+        
+    });
+
 const reviewsTitles = document.querySelectorAll('.reviews .reviews-title');
 
 reviewsTitles.forEach((elem) => {
@@ -31,24 +61,6 @@ reviewsTitles.forEach((elem) => {
                     }
             });
             reviewsList.classList.toggle('change-opacity');
-        }, 600);
-        
+        }, 600);  
     });
 });
-
-const hamburger = document.querySelector('.second-header__hamburger'),
-header = document.querySelector('.header');
-
-hamburger.addEventListener('click', () => {
-    
-    if (!hamburger.classList.contains('open')) {
-        header.style.top = '0';
-        hamburger.classList.toggle('open');
-    }
-    else {
-        header.style.top = '-2000px';
-        hamburger.classList.toggle('open');
-    }
-    
-});
-
