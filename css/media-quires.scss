@@ -13,345 +13,149 @@ $download-color: #e42626;
 $hover-text: #e50000;
 $consulting-button: #012e81;
 
-
-@media (max-width: 1441px) {
+@media (max-width: 1001px) {
     body {
-        main {
-            .about {
-                .container {
-                    .section-achievements {
-                        .achievement {
-                            margin-right: 3rem;
-                            span {
-                                font-size: 1.4rem;
-                                strong {
-                                    font-size: 3rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+        .reviews-title {
+            padding: 10px 15px;
         }
 
-    }
-}
+        .header {
+            position: absolute;
+            top: -2000px;
+            background: $black;
+            color: $white;
+            min-width: 100%;
+            border: none;
 
-@media(max-width: 1025px) {
-    body {
-        main {
-            .about {
-                .container {
-                    .section-title {
-                        margin-bottom: 3rem;
-                    }
-                    .section-description {
-                        max-width: unset;
+            .container {
+                flex-direction: column;
+                text-align: center;
+
+                .header-phone {
+                    font-size: 20px;
+                    margin-bottom: 20px;
+
+                    a {
+                        margin: 0;
+                        color: $white;
                     }
                 }
-            }
-            .description {
-                padding: 5rem 0;
-            }
-            .advantages {
-                .container {
+
+                ul {
                     flex-direction: column;
-                    text-align: unset;
-    
-                    .section-title {
-                        text-align: center;
-                    }
-    
-                    .advantages-description {
-                        display: block;
-                        margin: auto;
-    
-                        li {
-                            font-size: 1.3rem;
-                            margin-bottom: 3rem;
-                        }
-    
-                        .statistics-description {
-                            padding: 2rem 0;
-                            display: flex;
-                            justify-content: center;
-                            align-items: center;
-                            flex-direction: column;
-                            .statistics-list {
-                                min-height: 0;
-                                display: block;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
 
-@media (max-width: 769px) {
-    body {
-        .second-header {
-            .container {
-                .second-header__phone {
-                    display: none;
-                }
-            }
-        }
-        main {
-            .about {
-                .container {
-                    .section-achievements {
-                        .achievement {
-                            min-width: 180px;
-                            margin-right: 1rem;
-                        }
-                    }
-                }
-            }
-            .reviews {
-                .container {
-                    .reviews-titles {
-                        ul {
-                            .reviews-title {
-                                font-size: 1.2rem;
-                                padding: 0.5rem 1rem;
-                            }
-                        }
-                    }
-                }
-            }
-            .contacts {
-                padding: 7rem 0;
-                font-family: 'Muller Regular';
-                .container {
-                    .contacts-form {
-                        min-width: 55%;
-                    }
-                    .contacts-list {
-                        .section-title {
-                            margin-bottom: 3rem;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
+                    .nav__item {
+                        margin: 0;
+                        margin-bottom: 20px;
+                        font-size: 22px;
 
-@media (max-width: 425px) {
-    body {
-        header {
-            text-align: center;
-        }
-        .second-header {
-            &__slogan {
-                display: none;
-            }
-        }
-        main {
-            .jurist {
-                padding: 3rem 0;
-                background: $light-black;
-               
-            }
-            .about {
-                padding: 4rem 0;
-                background: $light-black;
-                .container {
-                    .section-description {
-                        margin-bottom: 3rem;
-                    }
-                    .section-achievements {
-                        display: block;
-                        .achievement {
-                            margin-bottom: 2rem;
-                            span {
-                                font-size: 1.4rem;
-                                strong {
-                                    font-size: 3rem;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-            .advantages {
-                 .container {
-                    .advantages-description {
-                        .comparing {
-                            display: block;
-                        }
-                        .statistics-description {
-                            margin-left: 0;
-                        }
-                    }
-                 }   
-            }
-            .consulting {
-                background: $light-black;
-                padding: 4rem 0;
-                .container {
-                    text-align: center;
-                    display: block;
-                }
-            }
-            .reviews {
-                .container {
-                    .reviews-titles {
-                        ul {
-                            display: block;
-                        }
-                    }
-                }
-            }   
-            .contacts {
-                .container {
-                    display: block;
-                    .contacts-form {
-                        .section-title {
-                            font-size: 1.7rem;
-                        }
-                        .form {
-                            width: 100%;
-                        }
-                    }
-                    .contacts-list {
-                        text-align: center;
-                        .section-title {
-                            font-size: 2rem;
-                        }
                         a {
-                            font-size: 1.2rem;
+                            color: $white;
                         }
-                        p {
-                            max-width: 100%;
-                        }
+                    }
+
+                }
+
+                .header-button {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .button {
+                        font-size: 20px;
                     }
                 }
             }
         }
-        footer {
-            .container {
-                .developer {
-                    padding: 0 19px;
-                }
-            }
-        }
-    }
-}
 
-@media (max-width: 375px) {
-    body {
-        main {
-            .jurist {
-                .container {
-                    .jurist-text {
-                        text-align: center;
-                        h2 {
-                            font-size: 2rem;
-                            span {
-                                font-size: 2.5rem;
-                            }
-                        }
-                        p {
-                            font-size: 2rem;
-                        }
-                    }
-                }
-                .button {
-                    min-width: 25rem;
-                } 
-            }
-        }
-    }
-}
-
-@media (max-width: 320px) {
-    body {
         main {
             .second-header {
                 .container {
-                    .app-download {
+                    .logo {
+                        margin: 0;
+                    }
+
+                    .second-header__phone {
                         display: none;
                     }
-                }
-            }
-            .jurist {
-                .container {
-                    .button {
-                        min-width: 22rem;
+
+                    .second-header__hamburger {
+                        display: unset;
                     }
                 }
             }
+
             .advantages {
-                display: none;
-            }
-            .contacts {
-                padding: 2rem 0;
                 .container {
-                    .contacts-list {
-                        .section-title {
-                            margin-bottom: 1rem;
+                    .advantages-description {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        .comparing {
+                            margin-bottom: 20px;
+                        }
+
+                        .statistics-description {
+                            text-align: center;
+
+                            .statistics-list {
+                                ul {
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: center;
+                                    align-items: flex-start;
+                                }
+                            }
                         }
                     }
                 }
-            }   
-        }
-        .footer {
-            .container {
-                display: block;
             }
-        }
-    }    
-}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width: 1800px) {
-    body {
-        main {
-            .rates {
-                padding: 3rem 0;
+            .about {
                 .container {
-                    .cards {
-                        display: block;
-                        .card {
-                            margin: auto;
-                            max-width: 40rem;
-                            padding: 2rem 1rem;
-                            margin-bottom: 2rem;
+                    .section-achievements {
+                        .achievement {
+                            margin-right: 10px;
                         }
                     }
+                }
+            }
 
+            .partners {
+                .container {
+                    .partners {
+                        .partner {
+                            img {
+                                display: block;
+                                margin: auto;
+                                width: 85%;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
 }
 
-@media (max-width: 1310px) {
+@media (max-width: 801px) {
     body {
         .header {
             .container {
-                ul {
-                    .nav__item {
-                        margin-right: 1.7rem;
+                .app-download {
+                    display: flex;
+                }
+
+                .header-button {
+                    .button {
+                        margin-bottom: 20px;
                     }
                 }
 
+                .header__slogan {
+                    display: flex;
+                }
             }
         }
 
@@ -359,94 +163,217 @@ $consulting-button: #012e81;
             .second-header {
                 .container {
                     .second-header__slogan {
-                        flex-basis: 35%;
+                        display: none;
+                    }
+
+                    .second-header__download {
+                        display: none;
                     }
                 }
             }
-        }
 
-    }
-}
+            .jurist {
+                padding: 2rem 0;
 
-@media (max-width: 1048px) {
-    body {
-        .header {
-            .container {
-                ul {
-                    .nav__item {
-                        margin-right: 1rem;
-                    }
-                }
-            }
-        }
-    }
-}
+                .container {
+                    text-align: center;
 
-@media (max-width: 998px) {
-    body {
-        .header {
-            .container {
-                .header-phone {
-                    a {
-                        font-size: 1.3rem;
-                    }
-                }
-            }
-        }
-    }
-}
+                    .jurist-text {
 
-@media (max-width: 935px) {
-    body {
-        .header {
-            padding: 3rem 0;
-            background: $light-black;
-            position: fixed;
-            top: -3000px;
-            left: 0;
-            right: 0;
-            border-bottom: 0;
+                        h2,
+                        p {
+                            font-size: 28px;
+                        }
 
-
-            .container {
-                flex-direction: column;
-
-                .header-phone {
-                    display: block;
-                    margin-bottom: 1rem;
-
-                    a {
-                        color: $white;
-                        font-size: 1.5rem;
-                    }
-                }
-
-                ul {
-                    display: block;
-
-                    .nav__item {
-                        margin: 0 0 1.5rem 0;
-                        font-size: 1.7rem;
-
-                        .nav__link {
-                            color: $white;
+                        h2 {
+                            span {
+                                font-size: 34px;
+                            }
                         }
                     }
                 }
+            }
 
-                .button {
-                    font-size: 2rem;
-                    padding: 0.5rem 1rem;
+            .about {
+                padding: 2rem 0;
+                background: $light-black;
+
+                .container {
+                    .section-description {
+                        margin-bottom: 20px;
+                    }
+
+                    .section-achievements {
+                        flex-direction: column;
+
+                        .achievement {
+                            margin: 0;
+                            margin-bottom: 20px;
+                        }
+                    }
                 }
+            }
 
+            .description {
+                .container {
+                    .descriptions-list {
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            .advantages {
+                padding: 2rem 0;
+
+                .container {
+                    .advantages-description {
+                        .comparing {
+                            display: none;
+                        }
+
+                        .comparing-mobile {
+                            display: flex;
+                        }
+                    }
+                }
+            }
+
+            .consulting {
+                background: $light-black;
+                padding: 2rem;
+
+                .container {
+                    flex-direction: column;
+
+                    .section-title {
+                        margin-bottom: 20px;
+                    }
+
+                    ul {
+                        margin-bottom: 20px;
+                    }
+
+                    .consulting-download {
+                        a {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+
+            .reviews {
+                .container {
+                    .reviews-titles {
+                        ul {
+                            flex-direction: column;
+
+                            li {
+                                display: block;
+                                margin: auto;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .partners {
+                padding: 2rem 0;
+
+                .container {
+                    .partners {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        .partner {
+                            margin-bottom: 100px;
+
+                            img {
+                                width: 100%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .rates {
+                .container {
+                    .cards {
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+
+                        .card {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
+            }
+
+            .contacts {
+                padding: 2rem 0;
+
+                .container {
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .contacts-form {
+                        .form {
+                            width: unset;
+                        }
+                    }
+
+                    .contacts-list {
+                        text-align: center;
+
+                        .section-title {
+                            margin-bottom: 20px;
+                        }
+                    }
+                }
             }
         }
 
+        .footer {
+            .container {
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 501px) {
+    body {
         main {
-            .second-header {
+            .advantages {
                 .container {
-                    .second-header__hamburger {
-                        display: flex;
+                    .advantages-description {
+                        .comparing-mobile {
+                            .comparing__advogrand__mobile, .comparing__others__mobile {
+                                .comparing__advogrand__list, .comparing__others__list {
+                                    text-align: center;
+                                }
+                            }
+                            .comparing__advogrand__mobile {
+                                flex-direction: column;
+                                .advantages__list {
+                                    ul {
+                                        text-align: center;
+                                        li {
+                                            margin-bottom: 10px;
+                                        }
+                                    }
+                                }
+                            }
+                            .comparing__others__mobile {
+                                .advantages__list {
+                                    display: none;
+                                }
+                            }
+                        }
                     }
                 }
             }

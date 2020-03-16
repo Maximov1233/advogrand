@@ -1,45 +1,45 @@
-@media (max-width: 1441px) {
-  body main .about .container .section-achievements .achievement {
-    margin-right: 3rem;
+@media (max-width: 1001px) {
+  body .reviews-title {
+    padding: 10px 15px;
   }
-  body main .about .container .section-achievements .achievement span {
-    font-size: 1.4rem;
+  body .header {
+    position: absolute;
+    top: -2000px;
+    background: #000;
+    color: #fff;
+    min-width: 100%;
+    border: none;
   }
-  body main .about .container .section-achievements .achievement span strong {
-    font-size: 3rem;
-  }
-}
-
-@media (max-width: 1025px) {
-  body main .about .container .section-title {
-    margin-bottom: 3rem;
-  }
-  body main .about .container .section-description {
-    max-width: unset;
-  }
-  body main .description {
-    padding: 5rem 0;
-  }
-  body main .advantages .container {
+  body .header .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    text-align: unset;
-  }
-  body main .advantages .container .section-title {
     text-align: center;
   }
-  body main .advantages .container .advantages-description {
-    display: block;
-    margin: auto;
+  body .header .container .header-phone {
+    font-size: 20px;
+    margin-bottom: 20px;
   }
-  body main .advantages .container .advantages-description li {
-    font-size: 1.3rem;
-    margin-bottom: 3rem;
+  body .header .container .header-phone a {
+    margin: 0;
+    color: #fff;
   }
-  body main .advantages .container .advantages-description .statistics-description {
-    padding: 2rem 0;
+  body .header .container ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .header .container ul .nav__item {
+    margin: 0;
+    margin-bottom: 20px;
+    font-size: 22px;
+  }
+  body .header .container ul .nav__item a {
+    color: #fff;
+  }
+  body .header .container .header-button {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -49,232 +49,250 @@
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  body .header .container .header-button .button {
+    font-size: 20px;
+  }
+  body main .second-header .container .logo {
+    margin: 0;
+  }
+  body main .second-header .container .second-header__phone {
+    display: none;
+  }
+  body main .second-header .container .second-header__hamburger {
+    display: unset;
+  }
+  body main .advantages .container .advantages-description {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .advantages .container .advantages-description .comparing {
+    margin-bottom: 20px;
+  }
+  body main .advantages .container .advantages-description .statistics-description {
+    text-align: center;
+  }
+  body main .advantages .container .advantages-description .statistics-description .statistics-list ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body main .about .container .section-achievements .achievement {
+    margin-right: 10px;
+  }
+  body main .partners .container .partners .partner img {
+    display: block;
+    margin: auto;
+    width: 85%;
+  }
+}
+
+@media (max-width: 801px) {
+  body .header .container .app-download {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body .header .container .header-button .button {
+    margin-bottom: 20px;
+  }
+  body .header .container .header__slogan {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .second-header .container .second-header__slogan {
+    display: none;
+  }
+  body main .second-header .container .second-header__download {
+    display: none;
+  }
+  body main .jurist {
+    padding: 2rem 0;
+  }
+  body main .jurist .container {
+    text-align: center;
+  }
+  body main .jurist .container .jurist-text h2,
+  body main .jurist .container .jurist-text p {
+    font-size: 28px;
+  }
+  body main .jurist .container .jurist-text h2 span {
+    font-size: 34px;
+  }
+  body main .about {
+    padding: 2rem 0;
+    background: #1c1c1c;
+  }
+  body main .about .container .section-description {
+    margin-bottom: 20px;
+  }
+  body main .about .container .section-achievements {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body main .advantages .container .advantages-description .statistics-description .statistics-list {
-    min-height: 0;
-    display: block;
-  }
-}
-
-@media (max-width: 769px) {
-  body .second-header .container .second-header__phone {
-    display: none;
-  }
   body main .about .container .section-achievements .achievement {
-    min-width: 180px;
-    margin-right: 1rem;
+    margin: 0;
+    margin-bottom: 20px;
   }
-  body main .reviews .container .reviews-titles ul .reviews-title {
-    font-size: 1.2rem;
-    padding: 0.5rem 1rem;
+  body main .description .container .descriptions-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  body main .contacts {
-    padding: 7rem 0;
-    font-family: 'Muller Regular';
-  }
-  body main .contacts .container .contacts-form {
-    min-width: 55%;
-  }
-  body main .contacts .container .contacts-list .section-title {
-    margin-bottom: 3rem;
-  }
-}
-
-@media (max-width: 425px) {
-  body header {
-    text-align: center;
-  }
-  body .second-header__slogan {
-    display: none;
-  }
-  body main .jurist {
-    padding: 3rem 0;
-    background: #1c1c1c;
-  }
-  body main .about {
-    padding: 4rem 0;
-    background: #1c1c1c;
-  }
-  body main .about .container .section-description {
-    margin-bottom: 3rem;
-  }
-  body main .about .container .section-achievements {
-    display: block;
-  }
-  body main .about .container .section-achievements .achievement {
-    margin-bottom: 2rem;
-  }
-  body main .about .container .section-achievements .achievement span {
-    font-size: 1.4rem;
-  }
-  body main .about .container .section-achievements .achievement span strong {
-    font-size: 3rem;
+  body main .advantages {
+    padding: 2rem 0;
   }
   body main .advantages .container .advantages-description .comparing {
-    display: block;
+    display: none;
   }
-  body main .advantages .container .advantages-description .statistics-description {
-    margin-left: 0;
+  body main .advantages .container .advantages-description .comparing-mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   body main .consulting {
     background: #1c1c1c;
-    padding: 4rem 0;
+    padding: 2rem;
   }
   body main .consulting .container {
-    text-align: center;
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .consulting .container .section-title {
+    margin-bottom: 20px;
+  }
+  body main .consulting .container ul {
+    margin-bottom: 20px;
+  }
+  body main .consulting .container .consulting-download a {
+    margin-bottom: 20px;
   }
   body main .reviews .container .reviews-titles ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .reviews .container .reviews-titles ul li {
     display: block;
+    margin: auto;
+  }
+  body main .partners {
+    padding: 2rem 0;
+  }
+  body main .partners .container .partners {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .partners .container .partners .partner {
+    margin-bottom: 100px;
+  }
+  body main .partners .container .partners .partner img {
+    width: 100%;
+  }
+  body main .rates .container .cards {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  body main .rates .container .cards .card {
+    margin-bottom: 20px;
+  }
+  body main .contacts {
+    padding: 2rem 0;
   }
   body main .contacts .container {
-    display: block;
-  }
-  body main .contacts .container .contacts-form .section-title {
-    font-size: 1.7rem;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   body main .contacts .container .contacts-form .form {
-    width: 100%;
+    width: unset;
   }
   body main .contacts .container .contacts-list {
     text-align: center;
   }
   body main .contacts .container .contacts-list .section-title {
-    font-size: 2rem;
-  }
-  body main .contacts .container .contacts-list a {
-    font-size: 1.2rem;
-  }
-  body main .contacts .container .contacts-list p {
-    max-width: 100%;
-  }
-  body footer .container .developer {
-    padding: 0 19px;
-  }
-}
-
-@media (max-width: 375px) {
-  body main .jurist .container .jurist-text {
-    text-align: center;
-  }
-  body main .jurist .container .jurist-text h2 {
-    font-size: 2rem;
-  }
-  body main .jurist .container .jurist-text h2 span {
-    font-size: 2.5rem;
-  }
-  body main .jurist .container .jurist-text p {
-    font-size: 2rem;
-  }
-  body main .jurist .button {
-    min-width: 25rem;
-  }
-}
-
-@media (max-width: 320px) {
-  body main .second-header .container .app-download {
-    display: none;
-  }
-  body main .jurist .container .button {
-    min-width: 22rem;
-  }
-  body main .advantages {
-    display: none;
-  }
-  body main .contacts {
-    padding: 2rem 0;
-  }
-  body main .contacts .container .contacts-list .section-title {
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
   }
   body .footer .container {
-    display: block;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
-@media (max-width: 1800px) {
-  body main .rates {
-    padding: 3rem 0;
+@media (max-width: 501px) {
+  body main .advantages .container .advantages-description .comparing-mobile .comparing__advogrand__mobile .comparing__advogrand__list, body main .advantages .container .advantages-description .comparing-mobile .comparing__advogrand__mobile .comparing__others__list, body main .advantages .container .advantages-description .comparing-mobile .comparing__others__mobile .comparing__advogrand__list, body main .advantages .container .advantages-description .comparing-mobile .comparing__others__mobile .comparing__others__list {
+    text-align: center;
   }
-  body main .rates .container .cards {
-    display: block;
-  }
-  body main .rates .container .cards .card {
-    margin: auto;
-    max-width: 40rem;
-    padding: 2rem 1rem;
-    margin-bottom: 2rem;
-  }
-}
-
-@media (max-width: 1310px) {
-  body .header .container ul .nav__item {
-    margin-right: 1.7rem;
-  }
-  body main .second-header .container .second-header__slogan {
-    -ms-flex-preferred-size: 35%;
-        flex-basis: 35%;
-  }
-}
-
-@media (max-width: 1048px) {
-  body .header .container ul .nav__item {
-    margin-right: 1rem;
-  }
-}
-
-@media (max-width: 998px) {
-  body .header .container .header-phone a {
-    font-size: 1.3rem;
-  }
-}
-
-@media (max-width: 935px) {
-  body .header {
-    padding: 3rem 0;
-    background: #1c1c1c;
-    position: fixed;
-    top: -3000px;
-    left: 0;
-    right: 0;
-    border-bottom: 0;
-  }
-  body .header .container {
+  body main .advantages .container .advantages-description .comparing-mobile .comparing__advogrand__mobile {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body .header .container .header-phone {
-    display: block;
-    margin-bottom: 1rem;
+  body main .advantages .container .advantages-description .comparing-mobile .comparing__advogrand__mobile .advantages__list ul {
+    text-align: center;
   }
-  body .header .container .header-phone a {
-    color: #fff;
-    font-size: 1.5rem;
+  body main .advantages .container .advantages-description .comparing-mobile .comparing__advogrand__mobile .advantages__list ul li {
+    margin-bottom: 10px;
   }
-  body .header .container ul {
-    display: block;
-  }
-  body .header .container ul .nav__item {
-    margin: 0 0 1.5rem 0;
-    font-size: 1.7rem;
-  }
-  body .header .container ul .nav__item .nav__link {
-    color: #fff;
-  }
-  body .header .container .button {
-    font-size: 2rem;
-    padding: 0.5rem 1rem;
-  }
-  body main .second-header .container .second-header__hamburger {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  body main .advantages .container .advantages-description .comparing-mobile .comparing__others__mobile .advantages__list {
+    display: none;
   }
 }
 /*# sourceMappingURL=media-quires.css.map */

@@ -109,6 +109,34 @@ body .header .container ul .nav__item {
   font-size: 16px;
 }
 
+body .header .container .app-download {
+  display: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  min-width: 140px;
+  margin-bottom: 20px;
+}
+
+body .header .container .app-download__link {
+  background: #fff;
+  border: 1px solid #e42626;
+  border-radius: 7px;
+  padding: 6px;
+}
+
+body .header .container .app-download__link svg {
+  width: 40px;
+  height: 40px;
+}
+
+body .header .container .header__slogan {
+  display: none;
+}
+
+body .header .container .header__slogan p {
+  font-size: 17px;
+}
+
 body main .second-header {
   color: #1c1c1c;
   padding: 1rem 0;
@@ -332,6 +360,10 @@ body main .about .container .section-achievements .achievement span strong {
   font-size: 40px;
 }
 
+body main .about .container .section-achievements .achievement:last-child {
+  margin-right: 0;
+}
+
 body main .description {
   padding: 5rem 0;
   color: #1c1c1c;
@@ -427,6 +459,33 @@ body main .advantages .container .advantages-description .comparing__others {
   padding: 10px 10px;
 }
 
+body main .advantages .container .advantages-description .comparing-mobile {
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+body main .advantages .container .advantages-description .comparing-mobile .advantages__list {
+  text-align: right;
+}
+
+body main .advantages .container .advantages-description .comparing-mobile .advantages__list ul li:first-child {
+  opacity: 0;
+}
+
+body main .advantages .container .advantages-description .comparing-mobile .comparing__advogrand__mobile, body main .advantages .container .advantages-description .comparing-mobile .comparing__others__mobile {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+body main .advantages .container .advantages-description .comparing-mobile .comparing__advogrand__mobile .advantages__list, body main .advantages .container .advantages-description .comparing-mobile .comparing__others__mobile .advantages__list {
+  padding: 10px 20px;
+}
+
 body main .advantages .container .advantages-description .statistics-description .section-title {
   font-size: 16px;
 }
@@ -439,7 +498,6 @@ body main .advantages .container .advantages-description .statistics-description
       -ms-flex-align: center;
           align-items: center;
   font-size: 16px;
-  padding-bottom: 10px;
 }
 
 body main .advantages .container .advantages-description .statistics-description .statistics-list li strong {
@@ -524,13 +582,6 @@ body main .reviews {
 
 body main .reviews .change-opacity {
   opacity: 0;
-}
-
-body main .reviews .container {
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 
 body main .reviews .container .section-title {

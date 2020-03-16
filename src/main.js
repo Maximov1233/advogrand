@@ -39,8 +39,6 @@ reviewsTitles.forEach((elem) => {
 const hamburger = document.querySelector('.second-header__hamburger'),
 header = document.querySelector('.header');
 
-
-
 hamburger.addEventListener('click', () => {
     
     if (!hamburger.classList.contains('open')) {

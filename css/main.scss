@@ -95,6 +95,8 @@ body {
         display: block;
     }
 
+    
+
     .header {
         padding: 1rem 0;
         border-bottom: 1px solid $header-color;
@@ -113,6 +115,33 @@ body {
                 .nav__item {
                     margin-right: 18px;
                     font-size: 16px;
+                }
+            }
+
+            .app-download {
+                display: none;
+                justify-content: space-around;
+                min-width: 140px;
+                margin-bottom: 20px;
+                
+                
+                &__link {
+                    background: $white;
+                    border: 1px solid $download-color;
+                    border-radius: 7px;
+                    padding: 6px;
+                    svg {
+                        width: 40px;
+                        height: 40px;
+                    }
+                }
+               
+            }
+
+            .header__slogan {
+                display: none;
+                p {
+                    font-size: 17px;
                 }
             }
         }
@@ -306,7 +335,9 @@ body {
                                 font-size: 40px;
                             }
                         }
-
+                        &:last-child {
+                            margin-right: 0;
+                        }
                     }
                 }
             }
@@ -397,6 +428,27 @@ body {
                         }
                     }
 
+                    .comparing-mobile {
+                        display: none;
+                        flex-direction: column;
+                        .advantages__list {
+                            text-align: right;
+                            ul {
+                                li:first-child {
+                                    opacity: 0;
+                                }
+                            }
+                        }
+                        .comparing__advogrand__mobile, .comparing__others__mobile {
+                            display: flex;
+                            margin-bottom: 20px;
+                            .advantages__list {
+                                padding: 10px 20px;
+                            }
+                        }
+                        
+                    }
+
                     .statistics-description {
 
                         .section-title {
@@ -408,7 +460,6 @@ body {
                                 display: flex;
                                 align-items: center;
                                 font-size: 16px;
-                                padding-bottom: 10px;
 
                                 strong {
                                     font-family: 'Proxima Nova Bd';
@@ -498,7 +549,6 @@ body {
             }
 
             .container {
-                flex-direction: column;
 
                 .section-title {
                     font-family: 'Muller Bold';
